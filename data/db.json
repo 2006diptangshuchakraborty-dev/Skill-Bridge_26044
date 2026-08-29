@@ -165252,6 +165252,16 @@
       "used": false,
       "usedAt": null,
       "createdAt": "2026-08-29T07:30:20.247Z"
+    },
+    {
+      "id": "int_1787992393313_22a666e8119a",
+      "token": "1b9349be67ed1613959527b864e230f8004dd3f93541355ffe34a85fafb20ddb",
+      "role": "STUDENT",
+      "email": null,
+      "expiresAt": "2026-08-29T08:48:13.313Z",
+      "used": false,
+      "usedAt": null,
+      "createdAt": "2026-08-29T08:33:13.313Z"
     }
   ],
   "sessions": [],
