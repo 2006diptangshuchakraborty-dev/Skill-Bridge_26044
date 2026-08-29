@@ -1,0 +1,45 @@
+CREATE TABLE "questions" (
+	"question_code" varchar(255) PRIMARY KEY,
+	"field" varchar(255) NOT NULL,
+	"exam" varchar(255) NOT NULL,
+	"subject" varchar(255) NOT NULL,
+	"chapter" varchar(255) NOT NULL,
+	"topic" varchar(255) NOT NULL,
+	"subtopic" varchar(255) NOT NULL,
+	"exam_date" varchar(255) NOT NULL,
+	"exam_shift" varchar(255) NOT NULL,
+	"question_type" varchar(255) NOT NULL,
+	"difficulty" varchar(255) NOT NULL,
+	"marks" integer NOT NULL,
+	"negative_marks" double precision NOT NULL,
+	"question_statement" text NOT NULL,
+	"question_img_url_1" varchar(255),
+	"question_img_url_2" varchar(255),
+	"question_img_url_3" varchar(255),
+	"option_a" text NOT NULL,
+	"option_a_img_url" varchar(255),
+	"option_b" text NOT NULL,
+	"option_b_img_url" varchar(255),
+	"option_c" text NOT NULL,
+	"option_c_img_url" varchar(255),
+	"option_d" text NOT NULL,
+	"option_d_img_url" varchar(255),
+	"option_e" text,
+	"option_e_img_url" varchar(255),
+	"option_f" text,
+	"option_f_img_url" varchar(255),
+	"correct_answer" varchar(255) NOT NULL,
+	"numerical_answer" integer,
+	"solution_text" text NOT NULL,
+	"solution_img_url_1" varchar(255),
+	"video_solution_url" varchar(255),
+	"language" varchar(255) NOT NULL,
+	"estimated_time_sec" integer NOT NULL,
+	"tags" varchar(255) NOT NULL,
+	"status" varchar(255) NOT NULL
+);
+--> statement-breakpoint
+ALTER TABLE "student_profile" ALTER COLUMN "skills" SET NOT NULL;--> statement-breakpoint
+ALTER TABLE "student_profile" ALTER COLUMN "projects" SET NOT NULL;--> statement-breakpoint
+ALTER TABLE "student_profile" ALTER COLUMN "certifications" SET NOT NULL;--> statement-breakpoint
+ALTER TABLE "student_profile" ALTER COLUMN "experience" SET NOT NULL;

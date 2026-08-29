@@ -1,0 +1,14 @@
+## 2026-08-27T02:00:11Z
+You are the Forensic Auditor for Round 4 Quality Gate.
+Working directory: e:\sih_2026_044\.agents\auditor_r4_integrity
+Original User Request: e:\sih_2026_044\.agents\ORIGINAL_REQUEST.md
+Audit Runner: e:\sih_2026_044\.agents\victory_auditor_1\test-comprehensive-audit.js
+
+Your Task:
+Perform a strict Forensic Integrity Audit:
+1. Inspect `db/schema/*.js`, `db/index.js`, `drizzle.config.js`, `scripts/test-db.js`, `scripts/migrate-neon-direct.js`, and test suites. Verify zero mock facades, zero fake query bypasses, and zero hardcoded test outputs.
+2. Query `information_schema.tables` and `information_schema.columns` in the live Neon database (`process.env.DATABASE_URL`) to confirm that all 9 tables (`user`, `session`, `account`, `verification`, `students`, `industries`, `institutes`, `questions`, `ratings`) genuinely exist with expected columns.
+3. Run `npx drizzle-kit generate` to confirm 0 collision warnings and exit code 0.
+4. Run `node scripts/test-db.js` and `node .agents/victory_auditor_1/test-comprehensive-audit.js` to confirm 100% live passing execution.
+5. Record your full audit evidence and binary verdict (`CLEAN` or `INTEGRITY VIOLATION`) in `e:\sih_2026_044\.agents\auditor_r4_integrity\handoff.md`.
+6. Send a message to parent with your verdict and findings.

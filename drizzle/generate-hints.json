@@ -1,0 +1,155 @@
+[
+  {
+    "type": "rename",
+    "kind": "table",
+    "from": ["public", "organization_profile"],
+    "to": ["public", "industries"]
+  },
+  {
+    "type": "rename",
+    "kind": "table",
+    "from": ["public", "institute"],
+    "to": ["public", "institutes"]
+  },
+  {
+    "type": "rename",
+    "kind": "table",
+    "from": ["public", "student_profile"],
+    "to": ["public", "students"]
+  },
+  {
+    "type": "create",
+    "kind": "column",
+    "entity": ["public", "ratings", "question_id"]
+  },
+  {
+    "type": "create",
+    "kind": "column",
+    "entity": ["public", "ratings", "student_id"]
+  },
+  {
+    "type": "create",
+    "kind": "column",
+    "entity": ["public", "ratings", "industry_id"]
+  },
+  {
+    "type": "create",
+    "kind": "column",
+    "entity": ["public", "ratings", "institute_id"]
+  },
+  {
+    "type": "create",
+    "kind": "column",
+    "entity": ["public", "ratings", "scores"]
+  },
+  {
+    "type": "create",
+    "kind": "column",
+    "entity": ["public", "ratings", "feedback"]
+  },
+  {
+    "type": "create",
+    "kind": "column",
+    "entity": ["public", "students", "full_name"]
+  },
+  {
+    "type": "create",
+    "kind": "column",
+    "entity": ["public", "students", "portfolio"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "industries", "industries_user_id_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "industries", "industries_registration_number_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "industries", "industries_verification_status_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "institutes", "institutes_user_id_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "institutes", "institutes_code_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "institutes", "institutes_verification_status_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "students", "students_user_id_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "students", "students_institute_id_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "students", "students_department_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "ratings", "ratings_reviewer_user_id_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "ratings", "ratings_target_user_id_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "ratings", "ratings_target_role_entity_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "ratings", "ratings_question_id_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "ratings", "ratings_student_id_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "index",
+    "entity": ["public", "ratings", "ratings_industry_id_idx"]
+  },
+  {
+    "type": "create",
+    "kind": "foreign key",
+    "entity": ["public", "ratings", "ratings_question_id_questions_id_fkey"]
+  },
+  {
+    "type": "create",
+    "kind": "foreign key",
+    "entity": ["public", "ratings", "ratings_student_id_students_id_fkey"]
+  },
+  {
+    "type": "create",
+    "kind": "foreign key",
+    "entity": ["public", "ratings", "ratings_industry_id_industries_id_fkey"]
+  },
+  {
+    "type": "create",
+    "kind": "foreign key",
+    "entity": ["public", "ratings", "ratings_institute_id_institutes_id_fkey"]
+  }
+]

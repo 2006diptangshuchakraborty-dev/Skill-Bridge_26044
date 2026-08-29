@@ -1,0 +1,882 @@
+{
+  "users": [
+    { "id": "usr_001", "name": "Aarav Sharma", "email": "aarav.sharma@example.edu", "role": "STUDENT", "entityId": "std_001" },
+    { "id": "usr_002", "name": "Priya Patel", "email": "priya.patel@example.edu", "role": "STUDENT", "entityId": "std_002" },
+    { "id": "usr_003", "name": "Rohan Verma", "email": "rohan.verma@example.edu", "role": "STUDENT", "entityId": "std_003" },
+    { "id": "usr_004", "name": "Ananya Sen", "email": "ananya.sen@example.edu", "role": "STUDENT", "entityId": "std_004" },
+    { "id": "usr_rec_01", "name": "Vikram Malhotra", "email": "recruiter@apexanalytics.com", "role": "RECRUITER", "entityId": "comp_001", "company": "Apex Analytics Corp" },
+    { "id": "usr_rec_02", "name": "Sarah Jenkins", "email": "talent@devforge.io", "role": "RECRUITER", "entityId": "comp_004", "company": "DevForge Labs" },
+    { "id": "usr_fac_01", "name": "Dr. Rajesh Kulkarni", "email": "hod.cse@iiite.ac.in", "role": "FACULTY", "entityId": "inst_001", "department": "Computer Science & Engineering" },
+    { "id": "usr_adm_01", "name": "System Administrator", "email": "admin@sih2026.gov.in", "role": "ADMIN", "entityId": "admin_root" }
+  ],
+  "institutes": [
+    { "id": "inst_001", "name": "Indian Institute of Information Technology & Engineering", "code": "IIITE", "location": "Bengaluru, Karnataka", "nirfRank": 14 },
+    { "id": "inst_002", "name": "National Institute of Advanced Technology", "code": "NIAT", "location": "Hyderabad, Telangana", "nirfRank": 22 },
+    { "id": "inst_003", "name": "Delhi Metropolitan Technical University", "code": "DMTU", "location": "New Delhi, Delhi", "nirfRank": 31 }
+  ],
+  "departments": [
+    { "id": "dept_cse", "name": "Computer Science & Engineering", "code": "CSE", "facultyCount": 42, "studentCount": 480 },
+    { "id": "dept_ds", "name": "Data Science & Artificial Intelligence", "code": "AI/DS", "facultyCount": 24, "studentCount": 240 },
+    { "id": "dept_it", "name": "Information Technology", "code": "IT", "facultyCount": 28, "studentCount": 320 },
+    { "id": "dept_ece", "name": "Electronics & Communication Engineering", "code": "ECE", "facultyCount": 35, "studentCount": 360 },
+    { "id": "dept_eee", "name": "Electrical & Electronics Engineering", "code": "EEE", "facultyCount": 26, "studentCount": 280 },
+    { "id": "dept_mech", "name": "Mechanical Engineering", "code": "MECH", "facultyCount": 30, "studentCount": 300 },
+    { "id": "dept_civil", "name": "Civil & Environmental Engineering", "code": "CIVIL", "facultyCount": 22, "studentCount": 220 }
+  ],
+  "companies": [
+    { "id": "comp_001", "name": "TechCorp Global", "companyName": "Apex Analytics Corp", "sector": "Software & Analytics", "industry": "Big Data & Business Intelligence", "verified": true, "kycStatus": "VERIFIED", "location": "Bengaluru", "website": "https://apexanalytics.com", "logo": "/logos/apex.png" },
+    { "id": "comp_002", "name": "FinTech Innovations", "companyName": "FinTech Global Innovations", "sector": "Banking & Financial", "industry": "Algorithmic Trading & FinTech", "verified": true, "kycStatus": "VERIFIED", "location": "Mumbai", "website": "https://fintechinnovations.com", "logo": "/logos/fintech.png" },
+    { "id": "comp_003", "name": "DataScale Labs", "companyName": "HealthPulse AI", "sector": "AI / Data Science", "industry": "Biomedical & Healthcare AI", "verified": true, "kycStatus": "VERIFIED", "location": "Hyderabad", "website": "https://datascalelabs.io", "logo": "/logos/datascale.png" },
+    { "id": "comp_004", "name": "CloudPeak Systems", "companyName": "CloudScale Systems", "sector": "DevOps & Cloud", "industry": "Cloud Infrastructure & DevOps", "verified": true, "kycStatus": "VERIFIED", "location": "Pune", "website": "https://cloudpeaksystems.com", "logo": "/logos/cloudpeak.png" },
+    { "id": "comp_005", "name": "NextGen HealthTech", "companyName": "DevForge Labs", "sector": "Healthcare IoT", "industry": "Full Stack Web & Mobile Products", "verified": true, "kycStatus": "VERIFIED", "location": "Chennai", "website": "https://nextgenhealth.tech", "logo": "/logos/healthtech.png" },
+    { "id": "comp_006", "name": "EcoMobility Digital", "companyName": "Nexus Dynamics", "sector": "EV / Automotive", "industry": "Autonomous Robotics & Embedded IoT", "verified": true, "kycStatus": "VERIFIED", "location": "Gurugram", "website": "https://ecomobility.io", "logo": "/logos/ecomobility.png" },
+    { "id": "comp_007", "name": "CyberShield InfoSec", "companyName": "CyberShield Defense", "sector": "Cybersecurity", "industry": "Cybersecurity & Threat Intelligence", "verified": true, "kycStatus": "VERIFIED", "location": "Noida", "website": "https://cybershield.sec", "logo": "/logos/cybershield.png" },
+    { "id": "comp_008", "name": "RetailWave Commerce", "companyName": "ByteWave Technologies", "sector": "E-Commerce", "industry": "Enterprise SaaS & Cloud Systems", "verified": true, "kycStatus": "VERIFIED", "location": "Bengaluru", "website": "https://retailwave.com", "logo": "/logos/retailwave.png" },
+    { "id": "comp_009", "name": "AeroDynamics AI", "companyName": "QuantumLogic Systems", "sector": "Aerospace & Robotics", "industry": "Quantum Computing & Cryptography", "verified": true, "kycStatus": "VERIFIED", "location": "Bengaluru", "website": "https://aerodynamics.ai", "logo": "/logos/aerodynamics.png" },
+    { "id": "comp_010", "name": "SmartGrid Energy", "companyName": "GreenGrid Energy Solutions", "sector": "CleanTech", "industry": "CleanTech & Smart Grid Analytics", "verified": true, "kycStatus": "VERIFIED", "location": "Ahmedabad", "website": "https://smartgridenergy.in", "logo": "/logos/smartgrid.png" },
+    { "id": "comp_011", "name": "HyperFlow Networks", "companyName": "InfraCore Networks", "sector": "Telecommunications", "industry": "Telecommunications & Network Edge", "verified": true, "kycStatus": "VERIFIED", "location": "Kolkata", "website": "https://hyperflownetworks.com", "logo": "/logos/hyperflow.png" },
+    { "id": "comp_012", "name": "QuantumByte Solutions", "companyName": "AlphaMatrix AI Solutions", "sector": "DeepTech / Research", "industry": "Generative AI & LLM Systems", "verified": false, "kycStatus": "PENDING", "location": "Hyderabad", "website": "https://quantumbytesol.com", "logo": "/logos/quantumbyte.png" }
+  ],
+  "skills": [
+    { "id": "skill_python", "name": "Python", "canonicalName": "Python", "category": "Programming Languages", "aliases": ["python", "python3", "py", "cpython", "python 3.x", "python language", "python 3"] },
+    { "id": "skill_sql", "name": "SQL", "canonicalName": "SQL", "category": "Database & Querying", "aliases": ["sql", "structured query language", "ansi sql", "plsql", "pl/sql", "t-sql", "tsql"] },
+    { "id": "skill_postgresql", "name": "PostgreSQL", "canonicalName": "PostgreSQL", "category": "Database & Querying", "aliases": ["postgresql", "postgres", "psql", "pgsql", "postgres db", "postgres database", "postgre sql"] },
+    { "id": "skill_data_analysis", "name": "Data Analysis", "canonicalName": "Data Analysis", "category": "Data Science & AI", "aliases": ["data analysis", "data analytics", "eda", "exploratory data analysis", "data wrangling", "data-analysis"] },
+    { "id": "skill_excel", "name": "Excel", "canonicalName": "Excel", "category": "Data Science & AI", "aliases": ["excel", "advanced excel", "ms excel", "microsoft excel", "vlookup", "spreadsheets", "pivot tables"] },
+    { "id": "skill_tableau", "name": "Tableau", "canonicalName": "Tableau", "category": "Data Science & AI", "aliases": ["tableau", "tableau desktop", "tableau server", "tableau bi", "tableau visualization"] },
+    { "id": "skill_powerbi", "name": "Power BI", "canonicalName": "Power BI", "category": "Data Science & AI", "aliases": ["power bi", "powerbi", "ms power bi", "microsoft power bi", "dax", "power bi desktop", "power-bi"] },
+    { "id": "skill_machine_learning", "name": "Machine Learning", "canonicalName": "Machine Learning", "category": "Data Science & AI", "aliases": ["machine learning", "ml", "scikit-learn", "sklearn", "statistical modeling", "supervised learning"] },
+    { "id": "skill_statistics", "name": "Statistics", "canonicalName": "Statistics", "category": "Data Science & AI", "aliases": ["statistics", "applied statistics", "stats", "probability", "hypothesis testing", "biostatistics", "statistical analysis"] },
+    { "id": "skill_react", "name": "React", "canonicalName": "React", "category": "Frontend Development", "aliases": ["react", "reactjs", "react.js", "react js", "react native"] },
+    { "id": "skill_nextjs", "name": "Next.js", "canonicalName": "Next.js", "category": "Frontend Development", "aliases": ["nextjs", "next.js", "next js", "next", "next framework"] },
+    { "id": "skill_javascript", "name": "JavaScript", "canonicalName": "JavaScript", "category": "Programming Languages", "aliases": ["javascript", "js", "ecmascript", "es6", "es2020", "es2022"] },
+    { "id": "skill_typescript", "name": "TypeScript", "canonicalName": "TypeScript", "category": "Programming Languages", "aliases": ["typescript", "ts", "typescript lang"] },
+    { "id": "skill_nodejs", "name": "Node.js", "canonicalName": "Node.js", "category": "Backend Development", "aliases": ["nodejs", "node.js", "node js", "node", "node backend"] },
+    { "id": "skill_fastapi", "name": "FastAPI", "canonicalName": "FastAPI", "category": "Backend Development", "aliases": ["fastapi", "fast api", "python fastapi"] },
+    { "id": "skill_docker", "name": "Docker", "canonicalName": "Docker", "category": "Cloud & DevOps", "aliases": ["docker", "containerization", "docker-compose", "docker containers", "dockerfile"] },
+    { "id": "skill_kubernetes", "name": "Kubernetes", "canonicalName": "Kubernetes", "category": "Cloud & DevOps", "aliases": ["kubernetes", "k8s", "kube", "k8"] },
+    { "id": "skill_aws", "name": "AWS", "canonicalName": "AWS", "category": "Cloud & DevOps", "aliases": ["aws", "amazon web services", "ec2", "s3", "lambda", "aws cloud", "iam"] },
+    { "id": "skill_git", "name": "Git", "canonicalName": "Git", "category": "Tools & Systems", "aliases": ["git", "github", "gitlab", "version control", "git cli", "bitbucket"] },
+    { "id": "skill_deep_learning", "name": "Deep Learning", "canonicalName": "Deep Learning", "category": "Data Science & AI", "aliases": ["deep learning", "dl", "neural networks", "artificial neural network"] },
+    { "id": "skill_pytorch", "name": "PyTorch", "canonicalName": "PyTorch", "category": "Data Science & AI", "aliases": ["pytorch", "pytorch-gpu", "torch"] },
+    { "id": "skill_tensorflow", "name": "TensorFlow", "canonicalName": "TensorFlow", "category": "Data Science & AI", "aliases": ["tensorflow", "tf", "keras"] },
+    { "id": "skill_nlp", "name": "Natural Language Processing", "canonicalName": "Natural Language Processing", "category": "Data Science & AI", "aliases": ["nlp", "natural language processing", "huggingface", "transformers", "spacy", "llm"] },
+    { "id": "skill_mongodb", "name": "MongoDB", "canonicalName": "MongoDB", "category": "Database & Querying", "aliases": ["mongodb", "mongo", "nosql", "documentdb", "mongodb atlas"] },
+    { "id": "skill_graphql", "name": "GraphQL", "canonicalName": "GraphQL", "category": "Backend Development", "aliases": ["graphql", "gql", "apollo", "apollo graphql"] },
+    { "id": "skill_tailwind", "name": "Tailwind CSS", "canonicalName": "Tailwind CSS", "category": "Frontend Development", "aliases": ["tailwind", "tailwindcss", "tailwind css"] },
+    { "id": "skill_cybersecurity", "name": "Cybersecurity", "canonicalName": "Cybersecurity", "category": "Cybersecurity", "aliases": ["cybersecurity", "infosec", "network security", "ethical hacking", "penetration testing"] },
+    { "id": "skill_linux", "name": "Linux", "canonicalName": "Linux", "category": "Tools & Systems", "aliases": ["linux", "unix", "bash", "shell scripting", "ubuntu", "centos", "debian"] },
+    { "id": "skill_r", "name": "R Programming", "canonicalName": "R Programming", "category": "Data Science & AI", "aliases": ["r", "r programming", "rstudio", "r-lang", "r language"] },
+    { "id": "skill_spark", "name": "Apache Spark", "canonicalName": "Apache Spark", "category": "Data Science & AI", "aliases": ["spark", "apache spark", "pyspark", "spark sql", "databricks"] },
+    { "id": "skill_java", "name": "Java", "canonicalName": "Java", "category": "Programming Languages", "aliases": ["java", "core java", "java 17", "java 21", "jvm", "java se"] },
+    { "id": "skill_spring_boot", "name": "Spring Boot", "canonicalName": "Spring Boot", "category": "Backend Development", "aliases": ["spring boot", "springboot", "spring framework", "spring mvc"] },
+    { "id": "skill_cplusplus", "name": "C++", "canonicalName": "C++", "category": "Programming Languages", "aliases": ["c++", "cpp", "c plus plus"] },
+    { "id": "skill_html_css", "name": "HTML & CSS", "canonicalName": "HTML & CSS", "category": "Frontend Development", "aliases": ["html", "css", "html5", "css3", "web design", "semantic html", "html & css", "html/css"] },
+    { "id": "skill_ci_cd", "name": "CI/CD", "canonicalName": "CI/CD", "category": "Cloud & DevOps", "aliases": ["ci/cd", "cicd", "github actions", "jenkins", "continuous integration", "gitlab ci"] },
+    { "id": "skill_agile", "name": "Agile & Scrum", "canonicalName": "Agile & Scrum", "category": "Tools & Systems", "aliases": ["agile", "scrum", "jira", "sprint planning", "kanban"] },
+    { "id": "skill_figma", "name": "Figma", "canonicalName": "Figma", "category": "Frontend Development", "aliases": ["figma", "ui/ux design", "wireframing", "prototyping", "ui design"] }
+  ],
+  "opportunities": [
+    {
+      "id": "opp_001",
+      "title": "Data Analyst Intern",
+      "roleTitle": "Data Analyst Internship",
+      "companyId": "comp_001",
+      "company": "TechCorp Global",
+      "companyName": "Apex Analytics Corp",
+      "location": "Bengaluru (Hybrid)",
+      "type": "Internship",
+      "roleType": "INTERNSHIP",
+      "stipend": "₹35,000 / month",
+      "duration": "6 Months",
+      "openings": 5,
+      "status": "ACTIVE",
+      "description": "Join our core analytics division to convert large-scale enterprise data into high-impact operational intelligence. Construct SQL queries, perform EDA in Python, and build dashboards in Tableau & Power BI.",
+      "requiredSkills": [
+        { "name": "Python", "canonicalName": "Python", "skillId": "skill_python", "proficiency": 2, "requiredProficiency": 2, "priority": "HIGH", "category": "Programming Languages" },
+        { "name": "SQL", "canonicalName": "SQL", "skillId": "skill_sql", "proficiency": 2, "requiredProficiency": 2, "priority": "HIGH", "category": "Database & Querying" },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "skillId": "skill_data_analysis", "proficiency": 3, "requiredProficiency": 3, "priority": "HIGH", "category": "Data Science & AI" },
+        { "name": "Statistics", "canonicalName": "Statistics", "skillId": "skill_statistics", "proficiency": 2, "requiredProficiency": 2, "priority": "HIGH", "category": "Data Science & AI" }
+      ],
+      "highPrioritySkills": [
+        { "name": "Python", "canonicalName": "Python", "skillId": "skill_python", "proficiency": 2, "requiredProficiency": 2, "priority": "HIGH", "category": "Programming Languages" },
+        { "name": "SQL", "canonicalName": "SQL", "skillId": "skill_sql", "proficiency": 2, "requiredProficiency": 2, "priority": "HIGH", "category": "Database & Querying" },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "skillId": "skill_data_analysis", "proficiency": 3, "requiredProficiency": 3, "priority": "HIGH", "category": "Data Science & AI" },
+        { "name": "Statistics", "canonicalName": "Statistics", "skillId": "skill_statistics", "proficiency": 2, "requiredProficiency": 2, "priority": "HIGH", "category": "Data Science & AI" }
+      ],
+      "preferredSkills": [
+        { "name": "Power BI", "canonicalName": "Power BI", "skillId": "skill_powerbi", "proficiency": 1, "requiredProficiency": 1, "priority": "LOW", "category": "Data Science & AI" },
+        { "name": "Tableau", "canonicalName": "Tableau", "skillId": "skill_tableau", "proficiency": 1, "requiredProficiency": 1, "priority": "LOW", "category": "Data Science & AI" },
+        { "name": "Excel", "canonicalName": "Excel", "skillId": "skill_excel", "proficiency": 3, "requiredProficiency": 3, "priority": "LOW", "category": "Data Science & AI" },
+        { "name": "Machine Learning", "canonicalName": "Machine Learning", "skillId": "skill_machine_learning", "proficiency": 1, "requiredProficiency": 1, "priority": "LOW", "category": "Data Science & AI" }
+      ],
+      "lowPrioritySkills": [
+        { "name": "Power BI", "canonicalName": "Power BI", "skillId": "skill_powerbi", "proficiency": 1, "requiredProficiency": 1, "priority": "LOW", "category": "Data Science & AI" },
+        { "name": "Tableau", "canonicalName": "Tableau", "skillId": "skill_tableau", "proficiency": 1, "requiredProficiency": 1, "priority": "LOW", "category": "Data Science & AI" },
+        { "name": "Excel", "canonicalName": "Excel", "skillId": "skill_excel", "proficiency": 3, "requiredProficiency": 3, "priority": "LOW", "category": "Data Science & AI" },
+        { "name": "Machine Learning", "canonicalName": "Machine Learning", "skillId": "skill_machine_learning", "proficiency": 1, "requiredProficiency": 1, "priority": "LOW", "category": "Data Science & AI" }
+      ],
+      "createdAt": "2026-08-15T09:00:00Z",
+      "deadline": "2026-09-30T23:59:59Z"
+    },
+    {
+      "id": "opp_002",
+      "title": "Frontend React Developer Intern",
+      "companyId": "comp_001",
+      "company": "TechCorp Global",
+      "location": "Bengaluru (Remote)",
+      "type": "Internship",
+      "stipend": "₹30,000 / month",
+      "duration": "3 Months",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "React", "canonicalName": "React", "proficiency": 2 },
+        { "name": "JavaScript", "canonicalName": "JavaScript", "proficiency": 2 },
+        { "name": "TypeScript", "canonicalName": "TypeScript", "proficiency": 2 }
+      ],
+      "preferredSkills": [
+        { "name": "Node.js", "canonicalName": "Node.js", "proficiency": 1 },
+        { "name": "Docker", "canonicalName": "Docker", "proficiency": 1 }
+      ]
+    },
+    {
+      "id": "opp_003",
+      "title": "Backend Node.js & Cloud Engineer",
+      "companyId": "comp_004",
+      "company": "CloudPeak Systems",
+      "location": "Pune",
+      "type": "Full-Time Placement",
+      "stipend": "₹8,50,000 / annum",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "Node.js", "canonicalName": "Node.js", "proficiency": 3 },
+        { "name": "PostgreSQL", "canonicalName": "PostgreSQL", "proficiency": 2 },
+        { "name": "Docker", "canonicalName": "Docker", "proficiency": 2 }
+      ],
+      "preferredSkills": [
+        { "name": "AWS", "canonicalName": "AWS", "proficiency": 2 },
+        { "name": "TypeScript", "canonicalName": "TypeScript", "proficiency": 2 }
+      ]
+    },
+    {
+      "id": "opp_004",
+      "title": "Machine Learning Research Intern",
+      "companyId": "comp_003",
+      "company": "DataScale Labs",
+      "location": "Hyderabad",
+      "type": "Internship",
+      "stipend": "₹45,000 / month",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 3 },
+        { "name": "Machine Learning", "canonicalName": "Machine Learning", "proficiency": 3 },
+        { "name": "Statistics", "canonicalName": "Statistics", "proficiency": 3 }
+      ],
+      "preferredSkills": [
+        { "name": "PyTorch", "canonicalName": "PyTorch", "proficiency": 2 },
+        { "name": "Docker", "canonicalName": "Docker", "proficiency": 1 }
+      ]
+    },
+    {
+      "id": "opp_005",
+      "title": "Financial Analytics Associate",
+      "companyId": "comp_002",
+      "company": "FinTech Innovations",
+      "location": "Mumbai",
+      "type": "Full-Time Placement",
+      "stipend": "₹10,00,000 / annum",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 3 },
+        { "name": "Excel", "canonicalName": "Excel", "proficiency": 4 },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "proficiency": 3 },
+        { "name": "Python", "canonicalName": "Python", "proficiency": 2 }
+      ],
+      "preferredSkills": [
+        { "name": "Power BI", "canonicalName": "Power BI", "proficiency": 2 },
+        { "name": "Python", "canonicalName": "Python", "proficiency": 2 }
+      ]
+    },
+    {
+      "id": "opp_006",
+      "title": "Cloud DevOps Specialist",
+      "companyId": "comp_004",
+      "company": "CloudPeak Systems",
+      "location": "Pune",
+      "type": "Full-Time Placement",
+      "stipend": "₹9,00,000 / annum",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "Docker", "canonicalName": "Docker", "proficiency": 3 },
+        { "name": "AWS", "canonicalName": "AWS", "proficiency": 3 }
+      ],
+      "preferredSkills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 2 },
+        { "name": "Git", "canonicalName": "Git", "proficiency": 3 }
+      ]
+    },
+    {
+      "id": "opp_007",
+      "title": "Full Stack Web Developer",
+      "companyId": "comp_005",
+      "company": "NextGen HealthTech",
+      "location": "Chennai",
+      "type": "Internship",
+      "stipend": "₹32,000 / month",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "React", "canonicalName": "React", "proficiency": 2 },
+        { "name": "Node.js", "canonicalName": "Node.js", "proficiency": 2 },
+        { "name": "MongoDB", "canonicalName": "MongoDB", "proficiency": 2 }
+      ],
+      "preferredSkills": [
+        { "name": "Tailwind CSS", "canonicalName": "Tailwind CSS", "proficiency": 2 },
+        { "name": "Git", "canonicalName": "Git", "proficiency": 2 }
+      ]
+    },
+    {
+      "id": "opp_008",
+      "title": "Cybersecurity Analyst Intern",
+      "companyId": "comp_007",
+      "company": "CyberShield InfoSec",
+      "location": "Noida",
+      "type": "Internship",
+      "stipend": "₹28,000 / month",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "Cybersecurity", "canonicalName": "Cybersecurity", "proficiency": 2 },
+        { "name": "Linux", "canonicalName": "Linux", "proficiency": 2 }
+      ],
+      "preferredSkills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 2 },
+        { "name": "Docker", "canonicalName": "Docker", "proficiency": 1 }
+      ]
+    },
+    {
+      "id": "opp_009",
+      "title": "Business Intelligence Specialist",
+      "companyId": "comp_008",
+      "company": "RetailWave Commerce",
+      "location": "Bengaluru",
+      "type": "Full-Time Placement",
+      "stipend": "₹7,50,000 / annum",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "Power BI", "canonicalName": "Power BI", "proficiency": 3 },
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 2 },
+        { "name": "Excel", "canonicalName": "Excel", "proficiency": 3 }
+      ],
+      "preferredSkills": [
+        { "name": "Tableau", "canonicalName": "Tableau", "proficiency": 2 },
+        { "name": "Statistics", "canonicalName": "Statistics", "proficiency": 2 }
+      ]
+    },
+    {
+      "id": "opp_010",
+      "title": "Robotics Embedded Systems Engineer",
+      "companyId": "comp_009",
+      "company": "AeroDynamics AI",
+      "location": "Bengaluru",
+      "type": "Full-Time Placement",
+      "stipend": "₹11,00,000 / annum",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "C++", "canonicalName": "C++", "proficiency": 3 },
+        { "name": "Linux", "canonicalName": "Linux", "proficiency": 2 }
+      ],
+      "preferredSkills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 2 },
+        { "name": "Git", "canonicalName": "Git", "proficiency": 2 }
+      ]
+    },
+    {
+      "id": "opp_011",
+      "title": "CleanTech Energy Analyst",
+      "companyId": "comp_010",
+      "company": "SmartGrid Energy",
+      "location": "Ahmedabad",
+      "type": "Internship",
+      "stipend": "₹25,000 / month",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "proficiency": 2 },
+        { "name": "Excel", "canonicalName": "Excel", "proficiency": 3 }
+      ],
+      "preferredSkills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 2 },
+        { "name": "Power BI", "canonicalName": "Power BI", "proficiency": 1 }
+      ]
+    },
+    {
+      "id": "opp_012",
+      "title": "Mobile App Developer (React Native)",
+      "companyId": "comp_001",
+      "company": "TechCorp Global",
+      "location": "Bengaluru",
+      "type": "Internship",
+      "stipend": "₹30,000 / month",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "JavaScript", "canonicalName": "JavaScript", "proficiency": 3 },
+        { "name": "React", "canonicalName": "React", "proficiency": 2 }
+      ],
+      "preferredSkills": [
+        { "name": "TypeScript", "canonicalName": "TypeScript", "proficiency": 2 },
+        { "name": "GraphQL", "canonicalName": "GraphQL", "proficiency": 1 }
+      ]
+    },
+    {
+      "id": "opp_013",
+      "title": "Big Data Engineer Intern",
+      "companyId": "comp_003",
+      "company": "DataScale Labs",
+      "location": "Hyderabad",
+      "type": "Internship",
+      "stipend": "₹40,000 / month",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 2 },
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 3 },
+        { "name": "Apache Spark", "canonicalName": "Apache Spark", "proficiency": 2 }
+      ],
+      "preferredSkills": [
+        { "name": "AWS", "canonicalName": "AWS", "proficiency": 2 },
+        { "name": "Docker", "canonicalName": "Docker", "proficiency": 1 }
+      ]
+    },
+    {
+      "id": "opp_014",
+      "title": "Quantitative Trading Analyst",
+      "companyId": "comp_002",
+      "company": "FinTech Innovations",
+      "location": "Mumbai",
+      "type": "Full-Time Placement",
+      "stipend": "₹12,00,000 / annum",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 3 },
+        { "name": "Statistics", "canonicalName": "Statistics", "proficiency": 3 },
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 2 }
+      ],
+      "preferredSkills": [
+        { "name": "Machine Learning", "canonicalName": "Machine Learning", "proficiency": 2 },
+        { "name": "R Programming", "canonicalName": "R Programming", "proficiency": 1 }
+      ]
+    },
+    {
+      "id": "opp_015",
+      "title": "Database Administrator Intern",
+      "companyId": "comp_004",
+      "company": "CloudPeak Systems",
+      "location": "Pune",
+      "type": "Internship",
+      "stipend": "₹28,000 / month",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "PostgreSQL", "canonicalName": "PostgreSQL", "proficiency": 2 },
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 3 },
+        { "name": "Linux", "canonicalName": "Linux", "proficiency": 2 }
+      ],
+      "preferredSkills": [
+        { "name": "MongoDB", "canonicalName": "MongoDB", "proficiency": 2 },
+        { "name": "Docker", "canonicalName": "Docker", "proficiency": 1 }
+      ]
+    },
+    {
+      "id": "opp_016",
+      "title": "Product Management Intern",
+      "companyId": "comp_008",
+      "company": "RetailWave Commerce",
+      "location": "Bengaluru",
+      "type": "Internship",
+      "stipend": "₹30,000 / month",
+      "status": "ACTIVE",
+      "requiredSkills": [
+        { "name": "Agile & Scrum", "canonicalName": "Agile & Scrum", "proficiency": 2 },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "proficiency": 2 }
+      ],
+      "preferredSkills": [
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 1 },
+        { "name": "Figma", "canonicalName": "Figma", "proficiency": 1 }
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": "std_001",
+      "studentId": "std_001",
+      "userId": "usr_001",
+      "name": "Aarav Sharma",
+      "email": "aarav.sharma@example.edu",
+      "rollNumber": "CS2026-001",
+      "instituteId": "inst_001",
+      "instituteName": "Indian Institute of Information Technology & Engineering",
+      "departmentId": "dept_cse",
+      "department": "Computer Science",
+      "departmentName": "Computer Science & Engineering",
+      "year": "4th Year",
+      "batchYear": 2026,
+      "gpa": 8.9,
+      "bio": "Third-year Computer Science undergraduate passionate about data analytics, query optimization, and dashboard engineering.",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150",
+      "overallConfidenceScore": 88,
+      "skills": [
+        { "name": "Python", "canonicalName": "Python", "skillId": "skill_python", "proficiency": 3, "evidenceLevel": 3, "evidenceUrl": "https://github.com/aarav-sharma/py-data-tools", "confidenceScore": 90, "verification": "Assessment Verified", "isIndustryVerified": false },
+        { "name": "SQL", "canonicalName": "SQL", "skillId": "skill_sql", "proficiency": 2, "evidenceLevel": 2, "evidenceUrl": "https://cert.hackerrank.com/sql-adv-aarav", "confidenceScore": 85, "verification": "Certificate", "isIndustryVerified": false },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "skillId": "skill_data_analysis", "proficiency": 3, "evidenceLevel": 4, "evidenceUrl": "https://github.com/aarav-sharma/sales-insights", "confidenceScore": 92, "verification": "Project Verified", "isIndustryVerified": false },
+        { "name": "Statistics", "canonicalName": "Statistics", "skillId": "skill_statistics", "proficiency": 2, "evidenceLevel": 2, "evidenceUrl": "https://nptel.ac.in/verify/stats-aarav", "confidenceScore": 84, "verification": "Coursework", "isIndustryVerified": false },
+        { "name": "Power BI", "canonicalName": "Power BI", "skillId": "skill_powerbi", "proficiency": 2, "evidenceLevel": 3, "evidenceUrl": "https://learn.microsoft.com/powerbi/aarav", "confidenceScore": 86, "verification": "Assessment", "isIndustryVerified": false },
+        { "name": "Tableau", "canonicalName": "Tableau", "skillId": "skill_tableau", "proficiency": 1, "evidenceLevel": 2, "evidenceUrl": "https://public.tableau.com/profile/aarav", "confidenceScore": 80, "verification": "Certificate", "isIndustryVerified": false },
+        { "name": "Excel", "canonicalName": "Excel", "skillId": "skill_excel", "proficiency": 3, "evidenceLevel": 3, "evidenceUrl": "https://coursera.org/verify/excel-aarav", "confidenceScore": 88, "verification": "Assessment", "isIndustryVerified": false }
+      ]
+    },
+    {
+      "id": "std_002",
+      "studentId": "std_002",
+      "userId": "usr_002",
+      "name": "Priya Patel",
+      "email": "priya.patel@example.edu",
+      "rollNumber": "DS2026-012",
+      "instituteId": "inst_001",
+      "instituteName": "Indian Institute of Information Technology & Engineering",
+      "departmentId": "dept_ds",
+      "department": "Information Technology",
+      "departmentName": "Data Science & Artificial Intelligence",
+      "year": "4th Year",
+      "batchYear": 2026,
+      "gpa": 9.4,
+      "bio": "Data Science student with industry internship experience, published research in exploratory data science, and end-to-end ML pipeline deployments.",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150",
+      "overallConfidenceScore": 96,
+      "skills": [
+        { "name": "Python", "canonicalName": "Python", "skillId": "skill_python", "proficiency": 4, "evidenceLevel": 4, "evidenceUrl": "https://apexanalytics.com/verify/priya-patel-intern", "confidenceScore": 98, "verification": "Open Source / Capstone", "isIndustryVerified": false },
+        { "name": "SQL", "canonicalName": "SQL", "skillId": "skill_sql", "proficiency": 3, "evidenceLevel": 4, "evidenceUrl": "https://github.com/priya-patel/pg-warehouse-etl", "confidenceScore": 95, "verification": "Production DB", "isIndustryVerified": false },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "skillId": "skill_data_analysis", "proficiency": 4, "evidenceLevel": 4, "evidenceUrl": "https://apexanalytics.com/verify/priya-patel-intern", "confidenceScore": 97, "verification": "Published Research", "isIndustryVerified": false },
+        { "name": "Statistics", "canonicalName": "Statistics", "skillId": "skill_statistics", "proficiency": 3, "evidenceLevel": 3, "evidenceUrl": "https://nptel.ac.in/verify/adv-stats-priya", "confidenceScore": 93, "verification": "NPTEL Elite", "isIndustryVerified": false },
+        { "name": "Power BI", "canonicalName": "Power BI", "skillId": "skill_powerbi", "proficiency": 3, "evidenceLevel": 3, "evidenceUrl": "https://learn.microsoft.com/powerbi/priya", "confidenceScore": 91, "verification": "Microsoft Certified", "isIndustryVerified": false },
+        { "name": "Tableau", "canonicalName": "Tableau", "skillId": "skill_tableau", "proficiency": 3, "evidenceLevel": 3, "evidenceUrl": "https://public.tableau.com/profile/priya", "confidenceScore": 92, "verification": "Tableau Desktop Specialist", "isIndustryVerified": false },
+        { "name": "Excel", "canonicalName": "Excel", "skillId": "skill_excel", "proficiency": 4, "evidenceLevel": 4, "evidenceUrl": "https://cert.microsoft.com/excel-expert-priya", "confidenceScore": 94, "verification": "Financial Modeling", "isIndustryVerified": false },
+        { "name": "Machine Learning", "canonicalName": "Machine Learning", "skillId": "skill_machine_learning", "proficiency": 2, "evidenceLevel": 3, "evidenceUrl": "https://github.com/priya-patel/customer-churn-ml", "confidenceScore": 90, "verification": "Hackathon Project", "isIndustryVerified": false }
+      ]
+    },
+    {
+      "id": "std_003",
+      "studentId": "std_003",
+      "userId": "usr_003",
+      "name": "Rohan Verma",
+      "email": "rohan.verma@example.edu",
+      "rollNumber": "IT2026-045",
+      "instituteId": "inst_001",
+      "instituteName": "Indian Institute of Information Technology & Engineering",
+      "departmentId": "dept_it",
+      "department": "Data Science",
+      "departmentName": "Information Technology",
+      "year": "3rd Year",
+      "batchYear": 2026,
+      "gpa": 7.8,
+      "bio": "IT undergraduate with frontend data visualization skills and basic ML knowledge. Currently studying database management.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "overallConfidenceScore": 75,
+      "skills": [
+        { "name": "Python", "canonicalName": "Python", "skillId": "skill_python", "proficiency": 2, "evidenceLevel": 2, "evidenceUrl": "https://coursera.org/verify/python-rohan", "confidenceScore": 76, "verification": "Certificate", "isIndustryVerified": false },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "skillId": "skill_data_analysis", "proficiency": 3, "evidenceLevel": 3, "evidenceUrl": "https://github.com/rohan-verma/eda-notebooks", "confidenceScore": 78, "verification": "Project", "isIndustryVerified": false },
+        { "name": "Statistics", "canonicalName": "Statistics", "skillId": "skill_statistics", "proficiency": 2, "evidenceLevel": 2, "evidenceUrl": "https://coursera.org/verify/stats-rohan", "confidenceScore": 73, "verification": "Coursework", "isIndustryVerified": false },
+        { "name": "Power BI", "canonicalName": "Power BI", "skillId": "skill_powerbi", "proficiency": 1, "evidenceLevel": 2, "evidenceUrl": "https://learn.microsoft.com/powerbi/rohan", "confidenceScore": 75, "verification": "Certificate", "isIndustryVerified": false },
+        { "name": "Tableau", "canonicalName": "Tableau", "skillId": "skill_tableau", "proficiency": 1, "evidenceLevel": 2, "evidenceUrl": "https://public.tableau.com/profile/rohan", "confidenceScore": 75, "verification": "Certificate", "isIndustryVerified": false },
+        { "name": "Excel", "canonicalName": "Excel", "skillId": "skill_excel", "proficiency": 3, "evidenceLevel": 3, "evidenceUrl": "https://udemy.com/certificate/excel-rohan", "confidenceScore": 74, "verification": "Assessment", "isIndustryVerified": false },
+        { "name": "Machine Learning", "canonicalName": "Machine Learning", "skillId": "skill_machine_learning", "proficiency": 1, "evidenceLevel": 2, "evidenceUrl": "https://github.com/rohan-verma/basic-ml", "confidenceScore": 72, "verification": "Course", "isIndustryVerified": false }
+      ]
+    },
+    {
+      "id": "std_004",
+      "studentId": "std_004",
+      "userId": "usr_004",
+      "name": "Ananya Sen",
+      "email": "ananya.sen@example.edu",
+      "rollNumber": "EE2026-023",
+      "instituteId": "inst_001",
+      "instituteName": "Indian Institute of Information Technology & Engineering",
+      "departmentId": "dept_ece",
+      "department": "Electronics",
+      "departmentName": "Electronics & Communication Engineering",
+      "year": "3rd Year",
+      "batchYear": 2026,
+      "gpa": 8.1,
+      "bio": "ECE student transitioning into business intelligence and data engineering. Self-taught in spreadsheets and beginner Python scripts.",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150",
+      "overallConfidenceScore": 70,
+      "skills": [
+        { "name": "Python", "canonicalName": "Python", "skillId": "skill_python", "proficiency": 1, "evidenceLevel": 1, "evidenceUrl": "", "confidenceScore": 60, "verification": "Self-declared", "isIndustryVerified": false },
+        { "name": "SQL", "canonicalName": "SQL", "skillId": "skill_sql", "proficiency": 2, "evidenceLevel": 2, "evidenceUrl": "https://coursera.org/verify/sql-ananya", "confidenceScore": 72, "verification": "Certificate", "isIndustryVerified": false },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "skillId": "skill_data_analysis", "proficiency": 2, "evidenceLevel": 2, "evidenceUrl": "https://github.com/ananya-sen/data-eda", "confidenceScore": 70, "verification": "Basic Project", "isIndustryVerified": false },
+        { "name": "Statistics", "canonicalName": "Statistics", "skillId": "skill_statistics", "proficiency": 1, "evidenceLevel": 1, "evidenceUrl": "", "confidenceScore": 62, "verification": "Self-declared", "isIndustryVerified": false },
+        { "name": "Excel", "canonicalName": "Excel", "skillId": "skill_excel", "proficiency": 2, "evidenceLevel": 2, "evidenceUrl": "https://cert.microsoft.com/excel-ananya", "confidenceScore": 75, "verification": "Course", "isIndustryVerified": false },
+        { "name": "Power BI", "canonicalName": "Power BI", "skillId": "skill_powerbi", "proficiency": 1, "evidenceLevel": 2, "evidenceUrl": "", "confidenceScore": 64, "verification": "Certificate", "isIndustryVerified": false }
+      ]
+    },
+    {
+      "id": "std_005",
+      "studentId": "std_005",
+      "name": "Vikram Gupta",
+      "email": "vikram.gupta@example.edu",
+      "department": "Computer Science",
+      "year": "4th Year",
+      "gpa": 8.5,
+      "skills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 3, "evidenceLevel": 4 },
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "React", "canonicalName": "React", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Node.js", "canonicalName": "Node.js", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Docker", "canonicalName": "Docker", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Excel", "canonicalName": "Excel", "proficiency": 3, "evidenceLevel": 3 }
+      ]
+    },
+    {
+      "id": "std_006",
+      "studentId": "std_006",
+      "name": "Neha Mehta",
+      "email": "neha.mehta@example.edu",
+      "department": "Information Technology",
+      "year": "3rd Year",
+      "gpa": 8.7,
+      "skills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "React", "canonicalName": "React", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Node.js", "canonicalName": "Node.js", "proficiency": 1, "evidenceLevel": 1 },
+        { "name": "Docker", "canonicalName": "Docker", "proficiency": 1, "evidenceLevel": 1 },
+        { "name": "Excel", "canonicalName": "Excel", "proficiency": 3, "evidenceLevel": 3 }
+      ]
+    },
+    {
+      "id": "std_007",
+      "studentId": "std_007",
+      "name": "Kabir Reddy",
+      "email": "kabir.reddy@example.edu",
+      "department": "Data Science",
+      "year": "4th Year",
+      "gpa": 9.1,
+      "skills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 4, "evidenceLevel": 4 },
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "proficiency": 4, "evidenceLevel": 4 },
+        { "name": "Statistics", "canonicalName": "Statistics", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Machine Learning", "canonicalName": "Machine Learning", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Excel", "canonicalName": "Excel", "proficiency": 3, "evidenceLevel": 3 }
+      ]
+    },
+    {
+      "id": "std_008",
+      "studentId": "std_008",
+      "name": "Sneha Nair",
+      "email": "sneha.nair@example.edu",
+      "department": "Electronics",
+      "year": "3rd Year",
+      "gpa": 7.9,
+      "skills": [
+        { "name": "C++", "canonicalName": "C++", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Linux", "canonicalName": "Linux", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Python", "canonicalName": "Python", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Git", "canonicalName": "Git", "proficiency": 2, "evidenceLevel": 2 }
+      ]
+    },
+    {
+      "id": "std_009",
+      "studentId": "std_009",
+      "name": "Arjun Singh",
+      "email": "arjun.singh@example.edu",
+      "department": "Computer Science",
+      "year": "4th Year",
+      "gpa": 8.3,
+      "skills": [
+        { "name": "Java", "canonicalName": "Java", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Spring Boot", "canonicalName": "Spring Boot", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "PostgreSQL", "canonicalName": "PostgreSQL", "proficiency": 2, "evidenceLevel": 2 }
+      ]
+    },
+    {
+      "id": "std_010",
+      "studentId": "std_010",
+      "name": "Isha Chopra",
+      "email": "isha.chopra@example.edu",
+      "department": "Information Technology",
+      "year": "3rd Year",
+      "gpa": 8.6,
+      "skills": [
+        { "name": "React", "canonicalName": "React", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "JavaScript", "canonicalName": "JavaScript", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Tailwind CSS", "canonicalName": "Tailwind CSS", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "HTML & CSS", "canonicalName": "HTML & CSS", "proficiency": 3, "evidenceLevel": 3 }
+      ]
+    },
+    {
+      "id": "std_011",
+      "studentId": "std_011",
+      "name": "Dev Rao",
+      "email": "dev.rao@example.edu",
+      "department": "Data Science",
+      "year": "4th Year",
+      "gpa": 9.0,
+      "skills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "NLP", "canonicalName": "Natural Language Processing", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Deep Learning", "canonicalName": "Deep Learning", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "PyTorch", "canonicalName": "PyTorch", "proficiency": 2, "evidenceLevel": 2 }
+      ]
+    },
+    {
+      "id": "std_012",
+      "studentId": "std_012",
+      "name": "Pooja Bose",
+      "email": "pooja.bose@example.edu",
+      "department": "Computer Science",
+      "year": "3rd Year",
+      "gpa": 8.4,
+      "skills": [
+        { "name": "Docker", "canonicalName": "Docker", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "AWS", "canonicalName": "AWS", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Linux", "canonicalName": "Linux", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Git", "canonicalName": "Git", "proficiency": 3, "evidenceLevel": 3 }
+      ]
+    },
+    {
+      "id": "std_013",
+      "studentId": "std_013",
+      "name": "Rahul Iyer",
+      "email": "rahul.iyer@example.edu",
+      "department": "Electronics",
+      "year": "4th Year",
+      "gpa": 7.7,
+      "skills": [
+        { "name": "Cybersecurity", "canonicalName": "Cybersecurity", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Linux", "canonicalName": "Linux", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Python", "canonicalName": "Python", "proficiency": 2, "evidenceLevel": 2 }
+      ]
+    },
+    {
+      "id": "std_014",
+      "studentId": "std_014",
+      "name": "Aditi Deshmukh",
+      "email": "aditi.deshmukh@example.edu",
+      "department": "Information Technology",
+      "year": "3rd Year",
+      "gpa": 8.8,
+      "skills": [
+        { "name": "Power BI", "canonicalName": "Power BI", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Excel", "canonicalName": "Excel", "proficiency": 4, "evidenceLevel": 4 }
+      ]
+    },
+    {
+      "id": "std_015",
+      "studentId": "std_015",
+      "name": "Karan Mishra",
+      "email": "karan.mishra@example.edu",
+      "department": "Computer Science",
+      "year": "4th Year",
+      "gpa": 8.2,
+      "skills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Apache Spark", "canonicalName": "Apache Spark", "proficiency": 2, "evidenceLevel": 2 }
+      ]
+    },
+    {
+      "id": "std_016",
+      "studentId": "std_016",
+      "name": "Meera Joshi",
+      "email": "meera.joshi@example.edu",
+      "department": "Data Science",
+      "year": "3rd Year",
+      "gpa": 8.9,
+      "skills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Statistics", "canonicalName": "Statistics", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Machine Learning", "canonicalName": "Machine Learning", "proficiency": 2, "evidenceLevel": 2 }
+      ]
+    },
+    {
+      "id": "std_017",
+      "studentId": "std_017",
+      "name": "Tarun Gupta",
+      "email": "tarun.gupta@example.edu",
+      "department": "Computer Science",
+      "year": "4th Year",
+      "gpa": 8.0,
+      "skills": [
+        { "name": "PostgreSQL", "canonicalName": "PostgreSQL", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "SQL", "canonicalName": "SQL", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Linux", "canonicalName": "Linux", "proficiency": 2, "evidenceLevel": 2 }
+      ]
+    },
+    {
+      "id": "std_018",
+      "studentId": "std_018",
+      "name": "Anjali Mehta",
+      "email": "anjali.mehta@example.edu",
+      "department": "Information Technology",
+      "year": "3rd Year",
+      "gpa": 8.6,
+      "skills": [
+        { "name": "Agile & Scrum", "canonicalName": "Agile & Scrum", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Figma", "canonicalName": "Figma", "proficiency": 2, "evidenceLevel": 2 }
+      ]
+    },
+    {
+      "id": "std_019",
+      "studentId": "std_019",
+      "name": "Varun Reddy",
+      "email": "varun.reddy@example.edu",
+      "department": "Mechanical",
+      "year": "4th Year",
+      "gpa": 7.6,
+      "skills": [
+        { "name": "Python", "canonicalName": "Python", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "proficiency": 2, "evidenceLevel": 2 },
+        { "name": "Excel", "canonicalName": "Excel", "proficiency": 3, "evidenceLevel": 3 }
+      ]
+    },
+    {
+      "id": "std_020",
+      "studentId": "std_020",
+      "name": "Deepika Nair",
+      "email": "deepika.nair@example.edu",
+      "department": "Civil",
+      "year": "3rd Year",
+      "gpa": 7.8,
+      "skills": [
+        { "name": "Excel", "canonicalName": "Excel", "proficiency": 3, "evidenceLevel": 3 },
+        { "name": "Data Analysis", "canonicalName": "Data Analysis", "proficiency": 2, "evidenceLevel": 2 }
+      ]
+    },
+    { "id": "std_021", "name": "Manish Singh", "email": "manish.singh@example.edu", "department": "Computer Science", "year": "4th Year", "gpa": 8.4, "skills": [{ "name": "Python", "proficiency": 3 }, { "name": "SQL", "proficiency": 2 }, { "name": "Excel", "proficiency": 3 }] },
+    { "id": "std_022", "name": "Kavita Chopra", "email": "kavita.chopra@example.edu", "department": "Information Technology", "year": "3rd Year", "gpa": 8.7, "skills": [{ "name": "React", "proficiency": 3 }, { "name": "JavaScript", "proficiency": 3 }, { "name": "Node.js", "proficiency": 2 }] },
+    { "id": "std_023", "name": "Siddharth Rao", "email": "siddharth.rao@example.edu", "department": "Data Science", "year": "4th Year", "gpa": 9.2, "skills": [{ "name": "Python", "proficiency": 4 }, { "name": "Machine Learning", "proficiency": 3 }, { "name": "Deep Learning", "proficiency": 3 }] },
+    { "id": "std_024", "name": "Riya Bose", "email": "riya.bose@example.edu", "department": "Electronics", "year": "3rd Year", "gpa": 8.1, "skills": [{ "name": "C++", "proficiency": 3 }, { "name": "Linux", "proficiency": 2 }, { "name": "Git", "proficiency": 2 }] },
+    { "id": "std_025", "name": "Sameer Iyer", "email": "sameer.iyer@example.edu", "department": "Computer Science", "year": "4th Year", "gpa": 8.3, "skills": [{ "name": "Docker", "proficiency": 3 }, { "name": "AWS", "proficiency": 2 }, { "name": "Linux", "proficiency": 3 }] },
+    { "id": "std_026", "name": "Tanvi Deshmukh", "email": "tanvi.deshmukh@example.edu", "department": "Information Technology", "year": "3rd Year", "gpa": 8.5, "skills": [{ "name": "JavaScript", "proficiency": 3 }, { "name": "React", "proficiency": 2 }, { "name": "Tailwind CSS", "proficiency": 3 }] },
+    { "id": "std_027", "name": "Abhishek Mishra", "email": "abhishek.mishra@example.edu", "department": "Data Science", "year": "4th Year", "gpa": 8.8, "skills": [{ "name": "Python", "proficiency": 3 }, { "name": "SQL", "proficiency": 3 }, { "name": "Data Analysis", "proficiency": 3 }] },
+    { "id": "std_028", "name": "Shreya Joshi", "email": "shreya.joshi@example.edu", "department": "Electronics", "year": "3rd Year", "gpa": 8.0, "skills": [{ "name": "Cybersecurity", "proficiency": 2 }, { "name": "Linux", "proficiency": 2 }, { "name": "Python", "proficiency": 2 }] },
+    { "id": "std_029", "name": "Aditya Gupta", "email": "aditya.gupta@example.edu", "department": "Computer Science", "year": "4th Year", "gpa": 8.6, "skills": [{ "name": "Java", "proficiency": 3 }, { "name": "Spring Boot", "proficiency": 3 }, { "name": "SQL", "proficiency": 3 }] },
+    { "id": "std_030", "name": "Kritika Mehta", "email": "kritika.mehta@example.edu", "department": "Information Technology", "year": "3rd Year", "gpa": 8.4, "skills": [{ "name": "Power BI", "proficiency": 2 }, { "name": "Tableau", "proficiency": 2 }, { "name": "Excel", "proficiency": 3 }] },
+    { "id": "std_031", "name": "Harsh Reddy", "email": "harsh.reddy@example.edu", "department": "Data Science", "year": "4th Year", "gpa": 9.0, "skills": [{ "name": "Python", "proficiency": 4 }, { "name": "SQL", "proficiency": 3 }, { "name": "Statistics", "proficiency": 3 }] },
+    { "id": "std_032", "name": "Divya Nair", "email": "divya.nair@example.edu", "department": "Computer Science", "year": "3rd Year", "gpa": 8.3, "skills": [{ "name": "React", "proficiency": 2 }, { "name": "Node.js", "proficiency": 2 }, { "name": "MongoDB", "proficiency": 2 }] },
+    { "id": "std_033", "name": "Naveen Singh", "email": "naveen.singh@example.edu", "department": "Electronics", "year": "4th Year", "gpa": 7.9, "skills": [{ "name": "C++", "proficiency": 2 }, { "name": "Linux", "proficiency": 2 }, { "name": "Python", "proficiency": 2 }] },
+    { "id": "std_034", "name": "Rashmi Chopra", "email": "rashmi.chopra@example.edu", "department": "Information Technology", "year": "3rd Year", "gpa": 8.6, "skills": [{ "name": "Docker", "proficiency": 2 }, { "name": "AWS", "proficiency": 2 }, { "name": "Git", "proficiency": 3 }] },
+    { "id": "std_035", "name": "Yash Rao", "email": "yash.rao@example.edu", "department": "Data Science", "year": "4th Year", "gpa": 8.9, "skills": [{ "name": "Python", "proficiency": 3 }, { "name": "NLP", "proficiency": 2 }, { "name": "Deep Learning", "proficiency": 2 }] },
+    { "id": "std_036", "name": "Simran Bose", "email": "simran.bose@example.edu", "department": "Computer Science", "year": "3rd Year", "gpa": 8.5, "skills": [{ "name": "JavaScript", "proficiency": 3 }, { "name": "TypeScript", "proficiency": 2 }, { "name": "React", "proficiency": 3 }] },
+    { "id": "std_037", "name": "Pranav Iyer", "email": "pranav.iyer@example.edu", "department": "Mechanical", "year": "4th Year", "gpa": 7.8, "skills": [{ "name": "Python", "proficiency": 2 }, { "name": "Excel", "proficiency": 3 }, { "name": "Data Analysis", "proficiency": 2 }] },
+    { "id": "std_038", "name": "Bhavna Deshmukh", "email": "bhavna.deshmukh@example.edu", "department": "Civil", "year": "3rd Year", "gpa": 8.0, "skills": [{ "name": "Excel", "proficiency": 3 }, { "name": "Agile & Scrum", "proficiency": 2 }] },
+    { "id": "std_039", "name": "Kunal Mishra", "email": "kunal.mishra@example.edu", "department": "Computer Science", "year": "4th Year", "gpa": 8.7, "skills": [{ "name": "Python", "proficiency": 3 }, { "name": "SQL", "proficiency": 3 }, { "name": "PostgreSQL", "proficiency": 2 }] },
+    { "id": "std_040", "name": "Geeta Joshi", "email": "geeta.joshi@example.edu", "department": "Information Technology", "year": "3rd Year", "gpa": 8.2, "skills": [{ "name": "Tableau", "proficiency": 2 }, { "name": "Power BI", "proficiency": 2 }, { "name": "Excel", "proficiency": 3 }] },
+    { "id": "std_041", "name": "Rishi Gupta", "email": "rishi.gupta@example.edu", "department": "Data Science", "year": "4th Year", "gpa": 9.3, "skills": [{ "name": "Python", "proficiency": 4 }, { "name": "Machine Learning", "proficiency": 3 }, { "name": "Statistics", "proficiency": 3 }, { "name": "SQL", "proficiency": 3 }] },
+    { "id": "std_042", "name": "Sonia Mehta", "email": "sonia.mehta@example.edu", "department": "Electronics", "year": "3rd Year", "gpa": 8.1, "skills": [{ "name": "Cybersecurity", "proficiency": 2 }, { "name": "Linux", "proficiency": 3 }, { "name": "Git", "proficiency": 2 }] },
+    { "id": "std_043", "name": "Amit Reddy", "email": "amit.reddy@example.edu", "department": "Computer Science", "year": "4th Year", "gpa": 8.5, "skills": [{ "name": "React", "proficiency": 3 }, { "name": "Node.js", "proficiency": 3 }, { "name": "Docker", "proficiency": 2 }] },
+    { "id": "std_044", "name": "Mitali Nair", "email": "mitali.nair@example.edu", "department": "Information Technology", "year": "3rd Year", "gpa": 8.8, "skills": [{ "name": "Python", "proficiency": 2 }, { "name": "SQL", "proficiency": 2 }, { "name": "Data Analysis", "proficiency": 3 }, { "name": "Power BI", "proficiency": 2 }] },
+    { "id": "std_045", "name": "Gaurav Singh", "email": "gaurav.singh@example.edu", "department": "Data Science", "year": "4th Year", "gpa": 8.6, "skills": [{ "name": "Python", "proficiency": 3 }, { "name": "Apache Spark", "proficiency": 2 }, { "name": "SQL", "proficiency": 3 }] },
+    { "id": "std_046", "name": "Pallavi Chopra", "email": "pallavi.chopra@example.edu", "department": "Computer Science", "year": "3rd Year", "gpa": 8.4, "skills": [{ "name": "Java", "proficiency": 3 }, { "name": "Spring Boot", "proficiency": 2 }, { "name": "PostgreSQL", "proficiency": 2 }] },
+    { "id": "std_047", "name": "Chirag Rao", "email": "chirag.rao@example.edu", "department": "Electronics", "year": "4th Year", "gpa": 7.9, "skills": [{ "name": "C++", "proficiency": 3 }, { "name": "Linux", "proficiency": 2 }, { "name": "Python", "proficiency": 1 }] },
+    { "id": "std_048", "name": "Deepa Bose", "email": "deepa.bose@example.edu", "department": "Information Technology", "year": "3rd Year", "gpa": 8.7, "skills": [{ "name": "React", "proficiency": 3 }, { "name": "TypeScript", "proficiency": 2 }, { "name": "Tailwind CSS", "proficiency": 2 }] },
+    { "id": "std_049", "name": "Kartik Iyer", "email": "kartik.iyer@example.edu", "department": "Mechanical", "year": "4th Year", "gpa": 7.7, "skills": [{ "name": "Excel", "proficiency": 3 }, { "name": "Data Analysis", "proficiency": 2 }, { "name": "Power BI", "proficiency": 1 }] },
+    { "id": "std_050", "name": "Lavanya Deshmukh", "email": "lavanya.deshmukh@example.edu", "department": "Civil", "year": "3rd Year", "gpa": 8.2, "skills": [{ "name": "Data Analysis", "proficiency": 2 }, { "name": "Excel", "proficiency": 3 }, { "name": "Agile & Scrum", "proficiency": 2 }] },
+    { "id": "std_051", "name": "Mohit Mishra", "email": "mohit.mishra@example.edu", "department": "Computer Science", "year": "4th Year", "gpa": 8.9, "skills": [{ "name": "Python", "proficiency": 3 }, { "name": "SQL", "proficiency": 3 }, { "name": "Docker", "proficiency": 2 }, { "name": "AWS", "proficiency": 2 }] },
+    { "id": "std_052", "name": "Archana Joshi", "email": "archana.joshi@example.edu", "department": "Data Science", "year": "3rd Year", "gpa": 9.1, "skills": [{ "name": "Python", "proficiency": 3 }, { "name": "Machine Learning", "proficiency": 2 }, { "name": "Statistics", "proficiency": 3 }, { "name": "Tableau", "proficiency": 2 }] }
+  ],
+  "applications": [
+    { "id": "app_001", "studentId": "std_001", "opportunityId": "opp_001", "status": "SUBMITTED", "appliedDate": "2026-08-16T10:30:00Z", "createdAt": "2026-08-16T10:30:00Z", "matchSnapshot": { "compositeScore": 92.5, "isEligible": true } },
+    { "id": "app_002", "studentId": "std_002", "opportunityId": "opp_001", "status": "SHORTLISTED", "appliedDate": "2026-08-15T14:20:00Z", "createdAt": "2026-08-15T14:20:00Z", "matchSnapshot": { "compositeScore": 100.0, "isEligible": true } }
+  ],
+  "alerts": [
+    {
+      "id": "alert_001",
+      "skillName": "Machine Learning",
+      "affectedStudentCount": 91,
+      "department": "Computer Science & Engineering",
+      "priority": "HIGH",
+      "hasPII": false,
+      "suggestedAction": "Create 1-Click Workshop",
+      "message": "91 eligible students in Computer Science are missing preferred skill 'Machine Learning' across 12 data science internship opportunities.",
+      "createdAt": "2026-08-20T08:00:00Z"
+    },
+    {
+      "id": "alert_002",
+      "skillName": "Docker",
+      "affectedStudentCount": 64,
+      "department": "Information Technology",
+      "priority": "MEDIUM",
+      "hasPII": false,
+      "suggestedAction": "Schedule Bootcamp",
+      "message": "64 eligible students in IT are missing preferred skill 'Docker' across 8 backend and cloud opportunities.",
+      "createdAt": "2026-08-21T09:30:00Z"
+    },
+    {
+      "id": "alert_003",
+      "skillName": "PostgreSQL",
+      "affectedStudentCount": 42,
+      "department": "Electronics & Communication",
+      "priority": "LOW",
+      "hasPII": false,
+      "suggestedAction": "Add Elective Module",
+      "message": "42 students missing PostgreSQL in database engineering applications.",
+      "createdAt": "2026-08-22T07:15:00Z"
+    }
+  ],
+  "trainingPrograms": [
+    {
+      "id": "tp_001",
+      "title": "Hands-on Applied Machine Learning with Scikit-Learn",
+      "targetSkill": "Machine Learning",
+      "targetDepartment": "Computer Science & Engineering",
+      "instructor": "Dr. Vikram Joshi",
+      "duration": "4 Weeks (32 Hours)",
+      "startDate": "2026-09-01",
+      "status": "SCHEDULED",
+      "enrolledCount": 78,
+      "maxCapacity": 100,
+      "sourceAlertId": "alert_001"
+    },
+    {
+      "id": "tp_002",
+      "title": "Docker & Containerization Cloud Deployment Bootcamp",
+      "targetSkill": "Docker",
+      "targetDepartment": "Information Technology",
+      "instructor": "Prof. Shalini Rao",
+      "duration": "2 Weeks (16 Hours)",
+      "startDate": "2026-08-25",
+      "status": "IN_PROGRESS",
+      "enrolledCount": 52,
+      "maxCapacity": 60,
+      "sourceAlertId": "alert_002"
+    }
+  ],
+  "feedbackReports": [
+    {
+      "id": "fb_001",
+      "studentId": "std_002",
+      "opportunityId": "opp_001",
+      "recruiterId": "usr_rec_01",
+      "recruiterName": "Vikram Malhotra",
+      "companyName": "Apex Analytics Corp",
+      "rating": 5,
+      "comments": "Priya showed exceptional proficiency in advanced Python data pipelines and PostgreSQL query tuning during her internship.",
+      "endorsedSkillIds": ["skill_python", "skill_data_analysis"],
+      "endorsedSkills": ["Python", "Data Analysis"],
+      "newEvidenceLevel": 5,
+      "submittedAt": "2026-08-10T16:45:00Z",
+      "createdAt": "2026-08-10T16:45:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log_001",
+      "actor": "System Administrator",
+      "role": "ADMIN",
+      "action": "SYSTEM_INITIALIZE",
+      "target": "database",
+      "metadata": { "seededStudents": 52, "seededCompanies": 12, "seededOpportunities": 16 },
+      "timestamp": "2026-08-22T14:00:00Z"
+    }
+  ]
+}
