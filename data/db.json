@@ -3279,6 +3279,42 @@
           "verificationId": "SB-PYTH-PGPAB",
           "confidence": "Medium",
           "verifiedAt": "2026-08-29T08:38:11.867Z"
+        },
+        {
+          "skillId": "skill_javascript",
+          "name": "JavaScript",
+          "category": "Programming Languages",
+          "selfRatedLevel": "Intermediate",
+          "yearsExperience": 1,
+          "projectCount": 1,
+          "certificates": [],
+          "portfolioUrl": "",
+          "status": "UNVERIFIED",
+          "proficiency": 0,
+          "claimedAt": "2026-08-29T08:49:56.253Z",
+          "level": "Unverified",
+          "score": 22,
+          "verificationId": "SB-JAVA-Y81ZA",
+          "confidence": "Medium",
+          "verifiedAt": "2026-08-29T08:50:45.916Z"
+        },
+        {
+          "skillId": "skill_react",
+          "name": "React",
+          "category": "Frontend Development",
+          "selfRatedLevel": "Expert",
+          "yearsExperience": 1,
+          "projectCount": 1,
+          "certificates": [],
+          "portfolioUrl": "",
+          "status": "VERIFIED",
+          "proficiency": 4,
+          "claimedAt": "2026-08-29T08:51:27.817Z",
+          "level": "Expert",
+          "score": 100,
+          "verificationId": "SB-REAC-YRSTD",
+          "confidence": "Medium",
+          "verifiedAt": "2026-08-29T08:53:03.229Z"
         }
       ]
     }
@@ -5706,6 +5742,246 @@
       },
       "createdAt": "2026-08-29T08:38:11.909Z",
       "updatedAt": "2026-08-29T08:38:11.909Z"
+    },
+    {
+      "id": "rint_1787993445950_03ee8609",
+      "interactionType": "TASK_EVALUATION",
+      "referenceId": "att_1787993402958_m7zhw",
+      "initiatorType": "STUDENT",
+      "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetType": "STUDENT",
+      "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "status": "EVALUATED",
+      "isBlind": false,
+      "deadline": null,
+      "completedAt": "2026-08-29T08:50:45.950Z",
+      "metadata": {
+        "attemptId": "att_1787993402958_m7zhw",
+        "skillId": "skill_javascript",
+        "skillName": "JavaScript",
+        "overallScore": 22,
+        "proficiencyLevel": "Unverified",
+        "verificationId": "SB-JAVA-Y81ZA",
+        "breakdown": {
+          "Conceptual Knowledge": 0,
+          "Problem Solving": 100,
+          "Practical Coding": 0,
+          "Advanced Knowledge": 0,
+          "Real-world Scenario": 100
+        },
+        "allowedCategories": [
+          "CODE_QUALITY",
+          "ARCHITECTURE",
+          "SPEED_DELIVERY",
+          "DOCUMENTATION",
+          "ACCURACY"
+        ],
+        "completedAt": "2026-08-29T08:50:45.950Z"
+      },
+      "createdAt": "2026-08-29T08:50:45.950Z",
+      "updatedAt": "2026-08-29T08:50:45.950Z"
+    },
+    {
+      "id": "rint_1787993508144_0c20f130",
+      "interactionType": "TASK_EVALUATION",
+      "referenceId": "att_1787993490500_3nqjv",
+      "initiatorType": "STUDENT",
+      "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetType": "STUDENT",
+      "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "status": "EVALUATED",
+      "isBlind": false,
+      "deadline": null,
+      "completedAt": "2026-08-29T08:51:48.144Z",
+      "metadata": {
+        "attemptId": "att_1787993490500_3nqjv",
+        "skillId": "skill_react",
+        "skillName": "React",
+        "overallScore": 0,
+        "proficiencyLevel": "Unverified",
+        "verificationId": "SB-REAC-J7VYB",
+        "breakdown": {
+          "Conceptual Knowledge": 0,
+          "Problem Solving": 100,
+          "Practical Coding": 100,
+          "Advanced Knowledge": 100,
+          "Real-world Scenario": 100
+        },
+        "allowedCategories": [
+          "CODE_QUALITY",
+          "ARCHITECTURE",
+          "SPEED_DELIVERY",
+          "DOCUMENTATION",
+          "ACCURACY"
+        ],
+        "completedAt": "2026-08-29T08:51:48.144Z"
+      },
+      "createdAt": "2026-08-29T08:51:48.144Z",
+      "updatedAt": "2026-08-29T08:51:48.144Z"
+    },
+    {
+      "id": "rint_1787993535281_32227749",
+      "interactionType": "TASK_EVALUATION",
+      "referenceId": "att_1787993527559_qx4zp",
+      "initiatorType": "STUDENT",
+      "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetType": "STUDENT",
+      "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "status": "EVALUATED",
+      "isBlind": false,
+      "deadline": null,
+      "completedAt": "2026-08-29T08:52:15.281Z",
+      "metadata": {
+        "attemptId": "att_1787993527559_qx4zp",
+        "skillId": "skill_react",
+        "skillName": "React",
+        "overallScore": 0,
+        "proficiencyLevel": "Unverified",
+        "verificationId": "SB-REAC-3J55G",
+        "breakdown": {
+          "Conceptual Knowledge": 0,
+          "Problem Solving": 100,
+          "Practical Coding": 100,
+          "Advanced Knowledge": 100,
+          "Real-world Scenario": 100
+        },
+        "allowedCategories": [
+          "CODE_QUALITY",
+          "ARCHITECTURE",
+          "SPEED_DELIVERY",
+          "DOCUMENTATION",
+          "ACCURACY"
+        ],
+        "completedAt": "2026-08-29T08:52:15.281Z"
+      },
+      "createdAt": "2026-08-29T08:52:15.281Z",
+      "updatedAt": "2026-08-29T08:52:15.281Z"
+    },
+    {
+      "id": "rint_1787993558174_3439ed56",
+      "interactionType": "TASK_EVALUATION",
+      "referenceId": "att_1787993552130_6nxso",
+      "initiatorType": "STUDENT",
+      "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetType": "STUDENT",
+      "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "status": "EVALUATED",
+      "isBlind": false,
+      "deadline": null,
+      "completedAt": "2026-08-29T08:52:38.174Z",
+      "metadata": {
+        "attemptId": "att_1787993552130_6nxso",
+        "skillId": "skill_react",
+        "skillName": "React",
+        "overallScore": 0,
+        "proficiencyLevel": "Unverified",
+        "verificationId": "SB-REAC-PD50K",
+        "breakdown": {
+          "Conceptual Knowledge": 0,
+          "Problem Solving": 100,
+          "Practical Coding": 100,
+          "Advanced Knowledge": 100,
+          "Real-world Scenario": 100
+        },
+        "allowedCategories": [
+          "CODE_QUALITY",
+          "ARCHITECTURE",
+          "SPEED_DELIVERY",
+          "DOCUMENTATION",
+          "ACCURACY"
+        ],
+        "completedAt": "2026-08-29T08:52:38.174Z"
+      },
+      "createdAt": "2026-08-29T08:52:38.174Z",
+      "updatedAt": "2026-08-29T08:52:38.174Z"
+    },
+    {
+      "id": "rint_1787993568594_76e97ada",
+      "interactionType": "TASK_EVALUATION",
+      "referenceId": "att_1787993562917_uis6l",
+      "initiatorType": "STUDENT",
+      "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetType": "STUDENT",
+      "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "status": "EVALUATED",
+      "isBlind": false,
+      "deadline": null,
+      "completedAt": "2026-08-29T08:52:48.594Z",
+      "metadata": {
+        "attemptId": "att_1787993562917_uis6l",
+        "skillId": "skill_react",
+        "skillName": "React",
+        "overallScore": 0,
+        "proficiencyLevel": "Unverified",
+        "verificationId": "SB-REAC-U1UTW",
+        "breakdown": {
+          "Conceptual Knowledge": 0,
+          "Problem Solving": 100,
+          "Practical Coding": 100,
+          "Advanced Knowledge": 100,
+          "Real-world Scenario": 100
+        },
+        "allowedCategories": [
+          "CODE_QUALITY",
+          "ARCHITECTURE",
+          "SPEED_DELIVERY",
+          "DOCUMENTATION",
+          "ACCURACY"
+        ],
+        "completedAt": "2026-08-29T08:52:48.594Z"
+      },
+      "createdAt": "2026-08-29T08:52:48.594Z",
+      "updatedAt": "2026-08-29T08:52:48.594Z"
+    },
+    {
+      "id": "rint_1787993583264_d3072fde",
+      "interactionType": "TASK_EVALUATION",
+      "referenceId": "att_1787993577187_988c2",
+      "initiatorType": "STUDENT",
+      "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetType": "STUDENT",
+      "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "status": "EVALUATED",
+      "isBlind": false,
+      "deadline": null,
+      "completedAt": "2026-08-29T08:53:03.264Z",
+      "metadata": {
+        "attemptId": "att_1787993577187_988c2",
+        "skillId": "skill_react",
+        "skillName": "React",
+        "overallScore": 100,
+        "proficiencyLevel": "Expert",
+        "verificationId": "SB-REAC-YRSTD",
+        "breakdown": {
+          "Conceptual Knowledge": 100,
+          "Problem Solving": 100,
+          "Practical Coding": 100,
+          "Advanced Knowledge": 100,
+          "Real-world Scenario": 100
+        },
+        "allowedCategories": [
+          "CODE_QUALITY",
+          "ARCHITECTURE",
+          "SPEED_DELIVERY",
+          "DOCUMENTATION",
+          "ACCURACY"
+        ],
+        "completedAt": "2026-08-29T08:53:03.264Z"
+      },
+      "createdAt": "2026-08-29T08:53:03.264Z",
+      "updatedAt": "2026-08-29T08:53:03.264Z"
     }
   ],
   "ratings": [
@@ -7173,6 +7449,324 @@
     }
   ],
   "ratingAuditLogs": [
+    {
+      "id": "ralog_1787993583297_oyg7",
+      "ratingId": null,
+      "interactionId": "rint_1787993583264_d3072fde",
+      "actorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "actorRole": "STUDENT",
+      "action": "INTERACTION_CREATED",
+      "previousState": null,
+      "newState": {
+        "id": "rint_1787993583264_d3072fde",
+        "interactionType": "TASK_EVALUATION",
+        "referenceId": "att_1787993577187_988c2",
+        "initiatorType": "STUDENT",
+        "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetType": "STUDENT",
+        "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "status": "EVALUATED",
+        "isBlind": false,
+        "deadline": null,
+        "completedAt": "2026-08-29T08:53:03.264Z",
+        "metadata": {
+          "attemptId": "att_1787993577187_988c2",
+          "skillId": "skill_react",
+          "skillName": "React",
+          "overallScore": 100,
+          "proficiencyLevel": "Expert",
+          "verificationId": "SB-REAC-YRSTD",
+          "breakdown": {
+            "Conceptual Knowledge": 100,
+            "Problem Solving": 100,
+            "Practical Coding": 100,
+            "Advanced Knowledge": 100,
+            "Real-world Scenario": 100
+          },
+          "allowedCategories": [
+            "CODE_QUALITY",
+            "ARCHITECTURE",
+            "SPEED_DELIVERY",
+            "DOCUMENTATION",
+            "ACCURACY"
+          ],
+          "completedAt": "2026-08-29T08:53:03.264Z"
+        },
+        "createdAt": "2026-08-29T08:53:03.264Z",
+        "updatedAt": "2026-08-29T08:53:03.264Z"
+      },
+      "reason": null,
+      "ipAddress": null,
+      "userAgent": null,
+      "createdAt": "2026-08-29T08:53:03.297Z"
+    },
+    {
+      "id": "ralog_1787993568625_pcvr",
+      "ratingId": null,
+      "interactionId": "rint_1787993568594_76e97ada",
+      "actorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "actorRole": "STUDENT",
+      "action": "INTERACTION_CREATED",
+      "previousState": null,
+      "newState": {
+        "id": "rint_1787993568594_76e97ada",
+        "interactionType": "TASK_EVALUATION",
+        "referenceId": "att_1787993562917_uis6l",
+        "initiatorType": "STUDENT",
+        "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetType": "STUDENT",
+        "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "status": "EVALUATED",
+        "isBlind": false,
+        "deadline": null,
+        "completedAt": "2026-08-29T08:52:48.594Z",
+        "metadata": {
+          "attemptId": "att_1787993562917_uis6l",
+          "skillId": "skill_react",
+          "skillName": "React",
+          "overallScore": 0,
+          "proficiencyLevel": "Unverified",
+          "verificationId": "SB-REAC-U1UTW",
+          "breakdown": {
+            "Conceptual Knowledge": 0,
+            "Problem Solving": 100,
+            "Practical Coding": 100,
+            "Advanced Knowledge": 100,
+            "Real-world Scenario": 100
+          },
+          "allowedCategories": [
+            "CODE_QUALITY",
+            "ARCHITECTURE",
+            "SPEED_DELIVERY",
+            "DOCUMENTATION",
+            "ACCURACY"
+          ],
+          "completedAt": "2026-08-29T08:52:48.594Z"
+        },
+        "createdAt": "2026-08-29T08:52:48.594Z",
+        "updatedAt": "2026-08-29T08:52:48.594Z"
+      },
+      "reason": null,
+      "ipAddress": null,
+      "userAgent": null,
+      "createdAt": "2026-08-29T08:52:48.625Z"
+    },
+    {
+      "id": "ralog_1787993558206_l8oa",
+      "ratingId": null,
+      "interactionId": "rint_1787993558174_3439ed56",
+      "actorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "actorRole": "STUDENT",
+      "action": "INTERACTION_CREATED",
+      "previousState": null,
+      "newState": {
+        "id": "rint_1787993558174_3439ed56",
+        "interactionType": "TASK_EVALUATION",
+        "referenceId": "att_1787993552130_6nxso",
+        "initiatorType": "STUDENT",
+        "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetType": "STUDENT",
+        "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "status": "EVALUATED",
+        "isBlind": false,
+        "deadline": null,
+        "completedAt": "2026-08-29T08:52:38.174Z",
+        "metadata": {
+          "attemptId": "att_1787993552130_6nxso",
+          "skillId": "skill_react",
+          "skillName": "React",
+          "overallScore": 0,
+          "proficiencyLevel": "Unverified",
+          "verificationId": "SB-REAC-PD50K",
+          "breakdown": {
+            "Conceptual Knowledge": 0,
+            "Problem Solving": 100,
+            "Practical Coding": 100,
+            "Advanced Knowledge": 100,
+            "Real-world Scenario": 100
+          },
+          "allowedCategories": [
+            "CODE_QUALITY",
+            "ARCHITECTURE",
+            "SPEED_DELIVERY",
+            "DOCUMENTATION",
+            "ACCURACY"
+          ],
+          "completedAt": "2026-08-29T08:52:38.174Z"
+        },
+        "createdAt": "2026-08-29T08:52:38.174Z",
+        "updatedAt": "2026-08-29T08:52:38.174Z"
+      },
+      "reason": null,
+      "ipAddress": null,
+      "userAgent": null,
+      "createdAt": "2026-08-29T08:52:38.206Z"
+    },
+    {
+      "id": "ralog_1787993535312_81fj",
+      "ratingId": null,
+      "interactionId": "rint_1787993535281_32227749",
+      "actorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "actorRole": "STUDENT",
+      "action": "INTERACTION_CREATED",
+      "previousState": null,
+      "newState": {
+        "id": "rint_1787993535281_32227749",
+        "interactionType": "TASK_EVALUATION",
+        "referenceId": "att_1787993527559_qx4zp",
+        "initiatorType": "STUDENT",
+        "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetType": "STUDENT",
+        "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "status": "EVALUATED",
+        "isBlind": false,
+        "deadline": null,
+        "completedAt": "2026-08-29T08:52:15.281Z",
+        "metadata": {
+          "attemptId": "att_1787993527559_qx4zp",
+          "skillId": "skill_react",
+          "skillName": "React",
+          "overallScore": 0,
+          "proficiencyLevel": "Unverified",
+          "verificationId": "SB-REAC-3J55G",
+          "breakdown": {
+            "Conceptual Knowledge": 0,
+            "Problem Solving": 100,
+            "Practical Coding": 100,
+            "Advanced Knowledge": 100,
+            "Real-world Scenario": 100
+          },
+          "allowedCategories": [
+            "CODE_QUALITY",
+            "ARCHITECTURE",
+            "SPEED_DELIVERY",
+            "DOCUMENTATION",
+            "ACCURACY"
+          ],
+          "completedAt": "2026-08-29T08:52:15.281Z"
+        },
+        "createdAt": "2026-08-29T08:52:15.281Z",
+        "updatedAt": "2026-08-29T08:52:15.281Z"
+      },
+      "reason": null,
+      "ipAddress": null,
+      "userAgent": null,
+      "createdAt": "2026-08-29T08:52:15.312Z"
+    },
+    {
+      "id": "ralog_1787993508177_rzfs",
+      "ratingId": null,
+      "interactionId": "rint_1787993508144_0c20f130",
+      "actorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "actorRole": "STUDENT",
+      "action": "INTERACTION_CREATED",
+      "previousState": null,
+      "newState": {
+        "id": "rint_1787993508144_0c20f130",
+        "interactionType": "TASK_EVALUATION",
+        "referenceId": "att_1787993490500_3nqjv",
+        "initiatorType": "STUDENT",
+        "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetType": "STUDENT",
+        "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "status": "EVALUATED",
+        "isBlind": false,
+        "deadline": null,
+        "completedAt": "2026-08-29T08:51:48.144Z",
+        "metadata": {
+          "attemptId": "att_1787993490500_3nqjv",
+          "skillId": "skill_react",
+          "skillName": "React",
+          "overallScore": 0,
+          "proficiencyLevel": "Unverified",
+          "verificationId": "SB-REAC-J7VYB",
+          "breakdown": {
+            "Conceptual Knowledge": 0,
+            "Problem Solving": 100,
+            "Practical Coding": 100,
+            "Advanced Knowledge": 100,
+            "Real-world Scenario": 100
+          },
+          "allowedCategories": [
+            "CODE_QUALITY",
+            "ARCHITECTURE",
+            "SPEED_DELIVERY",
+            "DOCUMENTATION",
+            "ACCURACY"
+          ],
+          "completedAt": "2026-08-29T08:51:48.144Z"
+        },
+        "createdAt": "2026-08-29T08:51:48.144Z",
+        "updatedAt": "2026-08-29T08:51:48.144Z"
+      },
+      "reason": null,
+      "ipAddress": null,
+      "userAgent": null,
+      "createdAt": "2026-08-29T08:51:48.177Z"
+    },
+    {
+      "id": "ralog_1787993445981_pz6b",
+      "ratingId": null,
+      "interactionId": "rint_1787993445950_03ee8609",
+      "actorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "actorRole": "STUDENT",
+      "action": "INTERACTION_CREATED",
+      "previousState": null,
+      "newState": {
+        "id": "rint_1787993445950_03ee8609",
+        "interactionType": "TASK_EVALUATION",
+        "referenceId": "att_1787993402958_m7zhw",
+        "initiatorType": "STUDENT",
+        "initiatorId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "initiatorUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetType": "STUDENT",
+        "targetId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "targetUserId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+        "status": "EVALUATED",
+        "isBlind": false,
+        "deadline": null,
+        "completedAt": "2026-08-29T08:50:45.950Z",
+        "metadata": {
+          "attemptId": "att_1787993402958_m7zhw",
+          "skillId": "skill_javascript",
+          "skillName": "JavaScript",
+          "overallScore": 22,
+          "proficiencyLevel": "Unverified",
+          "verificationId": "SB-JAVA-Y81ZA",
+          "breakdown": {
+            "Conceptual Knowledge": 0,
+            "Problem Solving": 100,
+            "Practical Coding": 0,
+            "Advanced Knowledge": 0,
+            "Real-world Scenario": 100
+          },
+          "allowedCategories": [
+            "CODE_QUALITY",
+            "ARCHITECTURE",
+            "SPEED_DELIVERY",
+            "DOCUMENTATION",
+            "ACCURACY"
+          ],
+          "completedAt": "2026-08-29T08:50:45.950Z"
+        },
+        "createdAt": "2026-08-29T08:50:45.950Z",
+        "updatedAt": "2026-08-29T08:50:45.950Z"
+      },
+      "reason": null,
+      "ipAddress": null,
+      "userAgent": null,
+      "createdAt": "2026-08-29T08:50:45.981Z"
+    },
     {
       "id": "ralog_1787992691949_haev",
       "ratingId": null,
@@ -166244,6 +166838,138 @@
       "integrityScore": 85,
       "verifiedAt": "2026-08-29T08:38:11.867Z",
       "expiresAt": "2027-08-29T08:38:11.867Z"
+    },
+    {
+      "id": "SB-JAVA-Y81ZA",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_javascript",
+      "skillName": "JavaScript",
+      "overallScore": 22,
+      "level": "Unverified",
+      "levelNum": 0,
+      "confidence": "Medium",
+      "status": "UNVERIFIED",
+      "attemptId": "att_1787993402958_m7zhw",
+      "breakdown": {
+        "Conceptual Knowledge": 0,
+        "Problem Solving": 100,
+        "Practical Coding": 0,
+        "Advanced Knowledge": 0,
+        "Real-world Scenario": 100
+      },
+      "integrityScore": 100,
+      "verifiedAt": "2026-08-29T08:50:45.916Z",
+      "expiresAt": "2027-08-29T08:50:45.916Z"
+    },
+    {
+      "id": "SB-REAC-J7VYB",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_react",
+      "skillName": "React",
+      "overallScore": 0,
+      "level": "Unverified",
+      "levelNum": 0,
+      "confidence": "Medium",
+      "status": "UNVERIFIED",
+      "attemptId": "att_1787993490500_3nqjv",
+      "breakdown": {
+        "Conceptual Knowledge": 0,
+        "Problem Solving": 100,
+        "Practical Coding": 100,
+        "Advanced Knowledge": 100,
+        "Real-world Scenario": 100
+      },
+      "integrityScore": 100,
+      "verifiedAt": "2026-08-29T08:51:48.107Z",
+      "expiresAt": "2027-08-29T08:51:48.107Z"
+    },
+    {
+      "id": "SB-REAC-3J55G",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_react",
+      "skillName": "React",
+      "overallScore": 0,
+      "level": "Unverified",
+      "levelNum": 0,
+      "confidence": "Medium",
+      "status": "UNVERIFIED",
+      "attemptId": "att_1787993527559_qx4zp",
+      "breakdown": {
+        "Conceptual Knowledge": 0,
+        "Problem Solving": 100,
+        "Practical Coding": 100,
+        "Advanced Knowledge": 100,
+        "Real-world Scenario": 100
+      },
+      "integrityScore": 100,
+      "verifiedAt": "2026-08-29T08:52:15.248Z",
+      "expiresAt": "2027-08-29T08:52:15.248Z"
+    },
+    {
+      "id": "SB-REAC-PD50K",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_react",
+      "skillName": "React",
+      "overallScore": 0,
+      "level": "Unverified",
+      "levelNum": 0,
+      "confidence": "Medium",
+      "status": "UNVERIFIED",
+      "attemptId": "att_1787993552130_6nxso",
+      "breakdown": {
+        "Conceptual Knowledge": 0,
+        "Problem Solving": 100,
+        "Practical Coding": 100,
+        "Advanced Knowledge": 100,
+        "Real-world Scenario": 100
+      },
+      "integrityScore": 100,
+      "verifiedAt": "2026-08-29T08:52:38.141Z",
+      "expiresAt": "2027-08-29T08:52:38.141Z"
+    },
+    {
+      "id": "SB-REAC-U1UTW",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_react",
+      "skillName": "React",
+      "overallScore": 0,
+      "level": "Unverified",
+      "levelNum": 0,
+      "confidence": "Medium",
+      "status": "UNVERIFIED",
+      "attemptId": "att_1787993562917_uis6l",
+      "breakdown": {
+        "Conceptual Knowledge": 0,
+        "Problem Solving": 100,
+        "Practical Coding": 100,
+        "Advanced Knowledge": 100,
+        "Real-world Scenario": 100
+      },
+      "integrityScore": 100,
+      "verifiedAt": "2026-08-29T08:52:48.562Z",
+      "expiresAt": "2027-08-29T08:52:48.562Z"
+    },
+    {
+      "id": "SB-REAC-YRSTD",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_react",
+      "skillName": "React",
+      "overallScore": 100,
+      "level": "Expert",
+      "levelNum": 4,
+      "confidence": "Medium",
+      "status": "VERIFIED",
+      "attemptId": "att_1787993577187_988c2",
+      "breakdown": {
+        "Conceptual Knowledge": 100,
+        "Problem Solving": 100,
+        "Practical Coding": 100,
+        "Advanced Knowledge": 100,
+        "Real-world Scenario": 100
+      },
+      "integrityScore": 100,
+      "verifiedAt": "2026-08-29T08:53:03.229Z",
+      "expiresAt": "2027-08-29T08:53:03.229Z"
     }
   ],
   "skillCategories": [
@@ -174883,6 +175609,426 @@
         "Practical Coding": 0,
         "Advanced Knowledge": 100,
         "Real-world Scenario": 0
+      }
+    },
+    {
+      "id": "att_1787993402958_m7zhw",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_javascript",
+      "skillName": "JavaScript",
+      "claimedLevel": "Intermediate",
+      "status": "SUBMITTED",
+      "startedAt": "2026-08-29T08:50:02.958Z",
+      "expiresAt": "2026-08-29T08:55:32.958Z",
+      "submittedAt": "2026-08-29T08:50:45.916Z",
+      "durationSeconds": 330,
+      "questions": [
+        {
+          "questionIndex": 1,
+          "id": "q_js_003",
+          "topicId": "async",
+          "dimension": "Practical Coding",
+          "questionType": "Code completion",
+          "question": "Complete the async function to fetch data and return JSON:\n```js\nasync function getData(url) {\n  const res = await fetch(url);\n  return await ______;\n}\n```",
+          "options": [
+            "res.json()",
+            "res.text()",
+            "JSON.stringify(res)",
+            "res.data"
+          ],
+          "difficulty": "Hard",
+          "points": 3,
+          "timeLimit": 90
+        },
+        {
+          "questionIndex": 2,
+          "id": "q_js_001",
+          "topicId": "fundamentals",
+          "dimension": "Conceptual Knowledge",
+          "questionType": "Single MCQ",
+          "question": "Which keyword creates a block-scoped variable that cannot be re-declared in the same scope?",
+          "options": [
+            "let",
+            "var",
+            "global",
+            "define"
+          ],
+          "difficulty": "Easy",
+          "points": 1,
+          "timeLimit": 60
+        },
+        {
+          "questionIndex": 3,
+          "id": "q_js_002",
+          "topicId": "intermediate",
+          "dimension": "Problem Solving",
+          "questionType": "Output prediction",
+          "question": "What is the output of `console.log(typeof null, typeof undefined)`?",
+          "options": [
+            "\"object\" \"undefined\"",
+            "\"null\" \"undefined\"",
+            "\"object\" \"null\"",
+            "\"undefined\" \"undefined\""
+          ],
+          "difficulty": "Medium",
+          "points": 2,
+          "timeLimit": 60
+        },
+        {
+          "questionIndex": 4,
+          "id": "q_js_004",
+          "topicId": "event-loop",
+          "dimension": "Advanced Knowledge",
+          "questionType": "Scenario-based question",
+          "question": "In the JS event loop, in what order are Promise microtasks and setTimeout macrotasks executed?",
+          "options": [
+            "All microtasks execute before the next macrotask in the queue",
+            "Macrotasks always execute before microtasks",
+            "They execute in strict FIFO order in a single combined queue",
+            "Microtasks execute only when the browser window loses focus"
+          ],
+          "difficulty": "Expert",
+          "points": 4,
+          "timeLimit": 120
+        }
+      ],
+      "answers": {
+        "q_js_003": {
+          "answer": "JSON.stringify(res)",
+          "timeSpentSeconds": 0,
+          "answeredAt": "2026-08-29T08:50:10.329Z"
+        },
+        "q_js_001": {
+          "answer": "global",
+          "timeSpentSeconds": 0,
+          "answeredAt": "2026-08-29T08:50:34.481Z"
+        },
+        "q_js_002": {
+          "answer": "\"object\" \"undefined\"",
+          "timeSpentSeconds": 0,
+          "answeredAt": "2026-08-29T08:50:38.126Z"
+        },
+        "q_js_004": {
+          "answer": "Microtasks execute only when the browser window loses focus",
+          "timeSpentSeconds": 0,
+          "answeredAt": "2026-08-29T08:50:41.998Z"
+        }
+      },
+      "antiCheating": {
+        "tabSwitchCount": 0,
+        "focusLossCount": 0,
+        "copyPasteCount": 0,
+        "fullscreenExitCount": 0,
+        "events": [],
+        "integrityScore": 100,
+        "reviewStatus": "CLEAN"
+      },
+      "createdAt": "2026-08-29T08:50:02.958Z",
+      "updatedAt": "2026-08-29T08:50:45.916Z",
+      "score": 22,
+      "percentage": 22,
+      "proficiencyLevel": "Unverified",
+      "dimensionBreakdown": {
+        "Conceptual Knowledge": 0,
+        "Problem Solving": 100,
+        "Practical Coding": 0,
+        "Advanced Knowledge": 0,
+        "Real-world Scenario": 100
+      }
+    },
+    {
+      "id": "att_1787993490500_3nqjv",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_react",
+      "skillName": "React",
+      "claimedLevel": "Expert",
+      "status": "SUBMITTED",
+      "startedAt": "2026-08-29T08:51:30.500Z",
+      "expiresAt": "2026-08-29T08:52:30.500Z",
+      "submittedAt": "2026-08-29T08:51:48.107Z",
+      "durationSeconds": 60,
+      "questions": [
+        {
+          "questionIndex": 1,
+          "id": "q_react_001",
+          "topicId": "hooks",
+          "dimension": "Conceptual Knowledge",
+          "questionType": "Single MCQ",
+          "question": "Which React hook should be used to run side-effects such as data fetching or DOM subscriptions?",
+          "options": [
+            "useEffect",
+            "useState",
+            "useMemo",
+            "useContext"
+          ],
+          "difficulty": "Easy",
+          "points": 1,
+          "timeLimit": 60
+        }
+      ],
+      "answers": {
+        "q_react_001": {
+          "answer": "useState",
+          "timeSpentSeconds": 0,
+          "answeredAt": "2026-08-29T08:51:39.560Z"
+        }
+      },
+      "antiCheating": {
+        "tabSwitchCount": 0,
+        "focusLossCount": 0,
+        "copyPasteCount": 0,
+        "fullscreenExitCount": 0,
+        "events": [],
+        "integrityScore": 100,
+        "reviewStatus": "CLEAN"
+      },
+      "createdAt": "2026-08-29T08:51:30.500Z",
+      "updatedAt": "2026-08-29T08:51:48.107Z",
+      "score": 0,
+      "percentage": 0,
+      "proficiencyLevel": "Unverified",
+      "dimensionBreakdown": {
+        "Conceptual Knowledge": 0,
+        "Problem Solving": 100,
+        "Practical Coding": 100,
+        "Advanced Knowledge": 100,
+        "Real-world Scenario": 100
+      }
+    },
+    {
+      "id": "att_1787993527559_qx4zp",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_react",
+      "skillName": "React",
+      "claimedLevel": "Expert",
+      "status": "SUBMITTED",
+      "startedAt": "2026-08-29T08:52:07.559Z",
+      "expiresAt": "2026-08-29T08:53:07.559Z",
+      "submittedAt": "2026-08-29T08:52:15.248Z",
+      "durationSeconds": 60,
+      "questions": [
+        {
+          "questionIndex": 1,
+          "id": "q_react_001",
+          "topicId": "hooks",
+          "dimension": "Conceptual Knowledge",
+          "questionType": "Single MCQ",
+          "question": "Which React hook should be used to run side-effects such as data fetching or DOM subscriptions?",
+          "options": [
+            "useEffect",
+            "useState",
+            "useMemo",
+            "useContext"
+          ],
+          "difficulty": "Easy",
+          "points": 1,
+          "timeLimit": 60
+        }
+      ],
+      "answers": {
+        "q_react_001": {
+          "answer": "useMemo",
+          "timeSpentSeconds": 0,
+          "answeredAt": "2026-08-29T08:52:12.943Z"
+        }
+      },
+      "antiCheating": {
+        "tabSwitchCount": 0,
+        "focusLossCount": 0,
+        "copyPasteCount": 0,
+        "fullscreenExitCount": 0,
+        "events": [],
+        "integrityScore": 100,
+        "reviewStatus": "CLEAN"
+      },
+      "createdAt": "2026-08-29T08:52:07.559Z",
+      "updatedAt": "2026-08-29T08:52:15.248Z",
+      "score": 0,
+      "percentage": 0,
+      "proficiencyLevel": "Unverified",
+      "dimensionBreakdown": {
+        "Conceptual Knowledge": 0,
+        "Problem Solving": 100,
+        "Practical Coding": 100,
+        "Advanced Knowledge": 100,
+        "Real-world Scenario": 100
+      }
+    },
+    {
+      "id": "att_1787993552130_6nxso",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_react",
+      "skillName": "React",
+      "claimedLevel": "Expert",
+      "status": "SUBMITTED",
+      "startedAt": "2026-08-29T08:52:32.130Z",
+      "expiresAt": "2026-08-29T08:53:32.130Z",
+      "submittedAt": "2026-08-29T08:52:38.141Z",
+      "durationSeconds": 60,
+      "questions": [
+        {
+          "questionIndex": 1,
+          "id": "q_react_001",
+          "topicId": "hooks",
+          "dimension": "Conceptual Knowledge",
+          "questionType": "Single MCQ",
+          "question": "Which React hook should be used to run side-effects such as data fetching or DOM subscriptions?",
+          "options": [
+            "useEffect",
+            "useState",
+            "useMemo",
+            "useContext"
+          ],
+          "difficulty": "Easy",
+          "points": 1,
+          "timeLimit": 60
+        }
+      ],
+      "answers": {
+        "q_react_001": {
+          "answer": "useState",
+          "timeSpentSeconds": 0,
+          "answeredAt": "2026-08-29T08:52:35.674Z"
+        }
+      },
+      "antiCheating": {
+        "tabSwitchCount": 0,
+        "focusLossCount": 0,
+        "copyPasteCount": 0,
+        "fullscreenExitCount": 0,
+        "events": [],
+        "integrityScore": 100,
+        "reviewStatus": "CLEAN"
+      },
+      "createdAt": "2026-08-29T08:52:32.130Z",
+      "updatedAt": "2026-08-29T08:52:38.141Z",
+      "score": 0,
+      "percentage": 0,
+      "proficiencyLevel": "Unverified",
+      "dimensionBreakdown": {
+        "Conceptual Knowledge": 0,
+        "Problem Solving": 100,
+        "Practical Coding": 100,
+        "Advanced Knowledge": 100,
+        "Real-world Scenario": 100
+      }
+    },
+    {
+      "id": "att_1787993562917_uis6l",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_react",
+      "skillName": "React",
+      "claimedLevel": "Expert",
+      "status": "SUBMITTED",
+      "startedAt": "2026-08-29T08:52:42.917Z",
+      "expiresAt": "2026-08-29T08:53:42.917Z",
+      "submittedAt": "2026-08-29T08:52:48.562Z",
+      "durationSeconds": 60,
+      "questions": [
+        {
+          "questionIndex": 1,
+          "id": "q_react_001",
+          "topicId": "hooks",
+          "dimension": "Conceptual Knowledge",
+          "questionType": "Single MCQ",
+          "question": "Which React hook should be used to run side-effects such as data fetching or DOM subscriptions?",
+          "options": [
+            "useEffect",
+            "useState",
+            "useMemo",
+            "useContext"
+          ],
+          "difficulty": "Easy",
+          "points": 1,
+          "timeLimit": 60
+        }
+      ],
+      "answers": {
+        "q_react_001": {
+          "answer": "useContext",
+          "timeSpentSeconds": 0,
+          "answeredAt": "2026-08-29T08:52:46.343Z"
+        }
+      },
+      "antiCheating": {
+        "tabSwitchCount": 0,
+        "focusLossCount": 0,
+        "copyPasteCount": 0,
+        "fullscreenExitCount": 0,
+        "events": [],
+        "integrityScore": 100,
+        "reviewStatus": "CLEAN"
+      },
+      "createdAt": "2026-08-29T08:52:42.917Z",
+      "updatedAt": "2026-08-29T08:52:48.562Z",
+      "score": 0,
+      "percentage": 0,
+      "proficiencyLevel": "Unverified",
+      "dimensionBreakdown": {
+        "Conceptual Knowledge": 0,
+        "Problem Solving": 100,
+        "Practical Coding": 100,
+        "Advanced Knowledge": 100,
+        "Real-world Scenario": 100
+      }
+    },
+    {
+      "id": "att_1787993577187_988c2",
+      "studentId": "qPx1VBsULlB0XcbcJYb3T6ED8VtPtWCu",
+      "skillId": "skill_react",
+      "skillName": "React",
+      "claimedLevel": "Expert",
+      "status": "EVALUATED",
+      "startedAt": "2026-08-29T08:52:57.187Z",
+      "expiresAt": "2026-08-29T08:53:57.187Z",
+      "submittedAt": "2026-08-29T08:53:03.229Z",
+      "durationSeconds": 60,
+      "questions": [
+        {
+          "questionIndex": 1,
+          "id": "q_react_001",
+          "topicId": "hooks",
+          "dimension": "Conceptual Knowledge",
+          "questionType": "Single MCQ",
+          "question": "Which React hook should be used to run side-effects such as data fetching or DOM subscriptions?",
+          "options": [
+            "useEffect",
+            "useState",
+            "useMemo",
+            "useContext"
+          ],
+          "difficulty": "Easy",
+          "points": 1,
+          "timeLimit": 60
+        }
+      ],
+      "answers": {
+        "q_react_001": {
+          "answer": "useEffect",
+          "timeSpentSeconds": 0,
+          "answeredAt": "2026-08-29T08:53:01.986Z"
+        }
+      },
+      "antiCheating": {
+        "tabSwitchCount": 0,
+        "focusLossCount": 0,
+        "copyPasteCount": 0,
+        "fullscreenExitCount": 0,
+        "events": [],
+        "integrityScore": 100,
+        "reviewStatus": "CLEAN"
+      },
+      "createdAt": "2026-08-29T08:52:57.187Z",
+      "updatedAt": "2026-08-29T08:53:03.229Z",
+      "score": 100,
+      "percentage": 100,
+      "proficiencyLevel": "Expert",
+      "dimensionBreakdown": {
+        "Conceptual Knowledge": 100,
+        "Problem Solving": 100,
+        "Practical Coding": 100,
+        "Advanced Knowledge": 100,
+        "Real-world Scenario": 100
       }
     }
   ]

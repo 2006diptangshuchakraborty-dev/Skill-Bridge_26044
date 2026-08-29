@@ -303,14 +303,6 @@ export default function Navbar() {
 
                       {role === "STUDENT" && (
                         <>
-                          {/* <Link
-                            href="/student/dashboard"
-                            onClick={() => setUserDropdownOpen(false)}
-                            className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
-                          >
-                            <GraduationCap size={14} className="text-emerald-400" />
-                            <span>Dashboard</span>
-                          </Link> */}
                           <Link
                             href="/student/profile"
                             onClick={() => setUserDropdownOpen(false)}
@@ -318,6 +310,15 @@ export default function Navbar() {
                           >
                             <User size={14} className="text-teal-400" />
                             <span>Profile</span>
+                          </Link>
+
+                          <Link
+                            href="http://localhost:3000/student/dashboard"
+                            onClick={() => setUserDropdownOpen(false)}
+                            className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
+                          >
+                            <GraduationCap size={14} className="text-emerald-400" />
+                            <span>Dashboard</span>
                           </Link>
                         </>
                       )}
