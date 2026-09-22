@@ -62,7 +62,11 @@ export default function Navbar() {
     // Path-based fallback
     if (pathname.startsWith("/admin")) {
       role = "ADMIN";
-    } else if (pathname.startsWith("/recruiter") || pathname.startsWith("/organization") || pathname.startsWith("/industry")) {
+    } else if (
+      pathname.startsWith("/recruiter") ||
+      pathname.startsWith("/organization") ||
+      pathname.startsWith("/industry")
+    ) {
       role = "INDUSTRY";
     } else if (pathname.startsWith("/institute")) {
       role = "INSTITUTE";
@@ -73,7 +77,9 @@ export default function Navbar() {
 
   // Calculate dynamic completion percentage for student
   const studentCompletion = user
-    ? user.profileCompletion || calculateProfileCompletion("STUDENT", user.profile || user) || 78
+    ? user.profileCompletion ||
+      calculateProfileCompletion("STUDENT", user.profile || user) ||
+      78
     : studentData.profile.profileCompletion || 78;
 
   const handleSignOut = async () => {
@@ -206,35 +212,39 @@ export default function Navbar() {
 
           {/* Desktop Center Links */}
           <div className="hidden md:flex items-center gap-1">
-            {!isPending && isLoggedIn ? (
-              // Authenticated Nav Links
-              authLinks.map((link) => {
-                const isActive = isActiveRoute(link.href);
-                return (
+            {!isPending && isLoggedIn
+              ? // Authenticated Nav Links
+                authLinks.map((link) => {
+                  const isActive = isActiveRoute(link.href);
+                  return (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className={navLinkClassName(isActive)}
+                      aria-current={isActive ? "page" : undefined}
+                    >
+                      {link.label}
+                    </Link>
+                  );
+                })
+              : // Public Unauthenticated Nav Links
+                publicNavLinks.map((link) => (
                   <Link
-  key={link.href}
-  href={link.href}
-                    className={navLinkClassName(isActive)}
-                    aria-current={isActive ? "page" : undefined}
+                    key={link.label}
+                    href={link.href}
+                    onClick={() =>
+                      setActiveHash(
+                        link.href.includes("#")
+                          ? `#${link.href.split("#")[1]}`
+                          : "",
+                      )
+                    }
+                    className={navLinkClassName(isActiveHash(link.href))}
+                    aria-current={isActiveHash(link.href) ? "page" : undefined}
                   >
                     {link.label}
                   </Link>
-                );
-              })
-            ) : (
-              // Public Unauthenticated Nav Links
-              publicNavLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setActiveHash(link.href.includes("#") ? `#${link.href.split("#")[1]}` : "")}
-                  className={navLinkClassName(isActiveHash(link.href))}
-                  aria-current={isActiveHash(link.href) ? "page" : undefined}
-                >
-                  {link.label}
-                </Link>
-              ))
-            )}
+                ))}
           </div>
 
           {/* Desktop Right Actions */}
@@ -248,13 +258,13 @@ export default function Navbar() {
                 {/* Role Pill */}
                 <span
                   className={`text-[10px] font-mono uppercase tracking-wider px-2 py-0.5 rounded border ${
-                    role === 'STUDENT'
-                      ? 'bg-emerald-500/10 text-emerald-300 border-emerald-500/30'
-                      : role === 'INDUSTRY'
-                      ? 'bg-teal-500/10 text-teal-300 border-teal-500/30'
-                      : role === 'INSTITUTE'
-                      ? 'bg-cyan-500/10 text-cyan-300 border-cyan-500/30'
-                      : 'bg-purple-500/10 text-purple-300 border-purple-500/30'
+                    role === "STUDENT"
+                      ? "bg-emerald-500/10 text-emerald-300 border-emerald-500/30"
+                      : role === "INDUSTRY"
+                        ? "bg-teal-500/10 text-teal-300 border-teal-500/30"
+                        : role === "INSTITUTE"
+                          ? "bg-cyan-500/10 text-cyan-300 border-cyan-500/30"
+                          : "bg-purple-500/10 text-purple-300 border-purple-500/30"
                   }`}
                 >
                   {role}
@@ -288,8 +298,12 @@ export default function Navbar() {
                   {userDropdownOpen && (
                     <div className="absolute right-0 mt-2 w-56 bg-slate-900 border border-slate-800 rounded-xl shadow-2xl p-2 z-50 animate-in fade-in-50 zoom-in-95">
                       <div className="px-3 py-2 border-b border-slate-800/80 mb-1">
-                        <p className="text-xs font-bold text-slate-100 truncate">{user?.name || "Signed in"}</p>
-                        <p className="text-[11px] text-slate-400 truncate">{user?.email}</p>
+                        <p className="text-xs font-bold text-slate-100 truncate">
+                          {user?.name || "Signed in"}
+                        </p>
+                        <p className="text-[11px] text-slate-400 truncate">
+                          {user?.email}
+                        </p>
                       </div>
 
                       <Link
@@ -313,11 +327,14 @@ export default function Navbar() {
                           </Link>
 
                           <Link
-                            href="http://localhost:3000/student/dashboard"
+                            href="/student/dashboard"
                             onClick={() => setUserDropdownOpen(false)}
                             className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs text-slate-300 hover:text-white hover:bg-slate-800 transition-colors"
                           >
-                            <GraduationCap size={14} className="text-emerald-400" />
+                            <GraduationCap
+                              size={14}
+                              className="text-emerald-400"
+                            />
                             <span>Dashboard</span>
                           </Link>
                         </>
@@ -390,7 +407,6 @@ export default function Navbar() {
                 </div>
 
                 {/* Direct Sign Out Button */}
-                
               </div>
             ) : (
               /* Logged-Out CTAs: Unified /auth entry point (replaces legacy /login and /register) */
@@ -434,37 +450,39 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-slate-800 bg-slate-950 px-4 py-4 space-y-3">
           <div className="flex flex-col space-y-1">
-            {isLoggedIn ? (
-              authLinks.map((link, idx) => {
-                const isActive = isActiveRoute(link.href);
-                return (
+            {isLoggedIn
+              ? authLinks.map((link, idx) => {
+                  const isActive = isActiveRoute(link.href);
+                  return (
+                    <Link
+                      key={`mobile-${link.href}-${idx}`}
+                      href={link.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={navLinkClassName(isActive, true)}
+                      aria-current={isActive ? "page" : undefined}
+                    >
+                      {link.label}
+                    </Link>
+                  );
+                })
+              : publicNavLinks.map((link) => (
                   <Link
-                    key={`mobile-${link.href}-${idx}`}
+                    key={`mobile-${link.label}`}
                     href={link.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={navLinkClassName(isActive, true)}
-                    aria-current={isActive ? "page" : undefined}
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setActiveHash(
+                        link.href.includes("#")
+                          ? `#${link.href.split("#")[1]}`
+                          : "",
+                      );
+                    }}
+                    className={navLinkClassName(isActiveHash(link.href), true)}
+                    aria-current={isActiveHash(link.href) ? "page" : undefined}
                   >
                     {link.label}
                   </Link>
-                );
-              })
-            ) : (
-              publicNavLinks.map((link) => (
-                <Link
-                  key={`mobile-${link.label}`}
-                  href={link.href}
-                  onClick={() => {
-                    setMobileMenuOpen(false);
-                    setActiveHash(link.href.includes("#") ? `#${link.href.split("#")[1]}` : "");
-                  }}
-                  className={navLinkClassName(isActiveHash(link.href), true)}
-                  aria-current={isActiveHash(link.href) ? "page" : undefined}
-                >
-                  {link.label}
-                </Link>
-              ))
-            )}
+                ))}
           </div>
 
           <div className="border-t border-slate-800 pt-3 flex flex-col gap-2">
@@ -475,7 +493,9 @@ export default function Navbar() {
                     {user?.name ? user.name.charAt(0).toUpperCase() : "U"}
                   </div>
                   <div className="text-left">
-                    <p className="text-xs font-bold text-slate-100">{user?.name || "Account"}</p>
+                    <p className="text-xs font-bold text-slate-100">
+                      {user?.name || "Account"}
+                    </p>
                     <p className="text-[10px] text-slate-400">{role}</p>
                   </div>
                 </div>
