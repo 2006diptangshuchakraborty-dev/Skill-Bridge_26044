@@ -11,7 +11,13 @@ try {
   delete process.env.NEXT_PUBLIC_APP_URL;
   delete process.env.VERCEL_URL;
   delete process.env.NEXT_PUBLIC_VERCEL_URL;
+  delete process.env.NODE_ENV;
 
+  process.env.VERCEL_URL = "example.vercel.app";
+  assert.equal(resolveAppBaseUrl(), "https://example.vercel.app");
+
+  process.env.NODE_ENV = "production";
+  process.env.BETTER_AUTH_URL = "http://localhost:3000";
   process.env.VERCEL_URL = "example.vercel.app";
   assert.equal(resolveAppBaseUrl(), "https://example.vercel.app");
 
